@@ -47,7 +47,7 @@ Try explaining it in simple language.
 
 #f Most common parts of a rice
 
-<img class="pxl-art" alt="illustration" src="/assets/images/ricing-guide.webp" />
+<img class="pxl-art" alt="illustration" src="embed/ricing-guide.webp" />
 
 #END f
 
