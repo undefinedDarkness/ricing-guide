@@ -7,23 +7,23 @@
    | Wezterm   | Y         | Y        | Y        | Y       | Y       | Y    | Y      | Lua        | 10/10  |
    | Alacritty | P         | N        | N        | Y       | Y       | N    | N      | Yaml       | 5/10   |
    | Kitty     | Y         | N        | Y        | N       | Y       | Y    | Y      | Custom     | 8/10   |
-   | Xterm     | N         | N        | N        | Y       | N       | N    | N      | Xresources | 6/10   |
+   | Xterm     | N         | N        | N        | Y       | N       | N    | Y      | Xresources | 7/10   |
    | St        | P         | P        | N        | Y       | N       | N    | P      | C header   | 7/10   |
-   | Foot      | N         | Y        | N        | Y       | Y       | N    | Y      | INI        | N/A    |
+   | Foot      | N         | Y        | N        | Y       | Y       | N    | Y      | INI        | 7/10   |
    | Vte       | N         | N        | N        | N       | N       | N    | P      | GUI        | 5/10   |
 
 
    *Notes:* 
    - Fallback refers to the ability to fallback fonts, that is find a character in the next font in a list if it is not in the first one.
    - Advanced refers to the capability of advanced open type features, primarily stylistic sets
-   - The foot terminal is wayland exclusive, and it has no rating as I have not had time to review it
+   - The foot terminal is wayland exclusive
    - If you're thinking about using st, I highly suggest you use [[https://github.com/bakkeby/st-flexipatch][st-flexipatch]] right from the start, It will save you a lot of time
    - VTE refers to any terminal that uses the [[https://gitlab.gnome.org/GNOME/vte][vte]] library as a shortcut, this does almost 99.99% of the heavy lifting for you so behaviour across different vte terminals tends to be the same, for example, gnome-terminal, xfce-terminal, [[https://github.com/endaaman/tym][tym]] all leverage the vte library.
 
    [[https://github.com/zenixls2/alacritty][Fork for ligatures in alacritty]] - Even the alacritty author recommends you simply use another terminal if you want ligatures.
    It is possible to enable bitmap fonts in kitty, using the ~kitty-bitmap~ AUR package, [[https://github.com/slavfox/Cozette#kitty][More instructions]] - The author does not and will never support bitmap fonts
 
-   Issue page for sixel support in vte: https://gitlab.gnome.org/GNOME/vte/-/issues/253
+   Issue page for sixel support in VTE: https://gitlab.gnome.org/GNOME/vte/-/issues/253
 
    [[https://wiki.archlinux.org/title/List_of_applications#Terminal][Arch Wiki Page]]
 
@@ -34,10 +34,15 @@
    For terminals without image support entirely, there are hacks using ~w3m-img~ and ~uberzerg~ to get them...but they're finicky and don't just work™, so I'd recommend against them.
    [[https://github.com/dylanaraps/neofetch/wiki/Images-in-the-terminal][Full article]]
 
+   XTerm (compiled with --enable-sixel-graphics option) does support sixel,
+   You should launch xterm with “-ti vt340” option. The SIXEL palette is limited to a maximum of 16 colors. To avoid this limitation, Try
+
    *Overview:*
    Alacritty doesn't support images and needs a hack;
    Wezterm natively supports iterms2's image format & sixel;
    Kitty has its own format;
+   Foot supports sixel;
+   Xterm supports sixel;
    St can support sixel via a [[https://gitlab.com/exorcist365/dotfulls/-/blob/master/.local/share/src/st/patches/0001-add-st-sixel.patch][patch]]
 
 ** Prompts

@@ -189,11 +189,9 @@ The following are popular as of October 2021:
 [jonaburg/picom](https://github.com/jonaburg/picom)    -> slightly buggy sliding animations
 [dccsillag/picom](https://github.com/dccsillag/picom)  -> has cool, configurable animations
 [pijulius/picom](https://github.com/pijulius/picom)    -> fork of dccsillag, added animations and optimisations
-
 [Tanish2002/picom](https://github.com/Tanish2002/picom)-> also has animations, try if the others do not work
 
 snippet to configure animations on dccsillag or pijulius
-
 ```conf
 # Animations
 animations = true;
@@ -209,13 +207,24 @@ animation-for-workspace-switch-in = "zoom";
 animation-for-workspace-switch-out = "zoom";
 ```
 
+snippet to configure animations on jonaburg
+```conf
+transition-length = 300
+transition-pow-x = 0.1
+transition-pow-y = 0.1
+transition-pow-w = 0.1
+transition-pow-h = 0.1
+size-transition = true
+```
+
 Example configuration with most of the available options: https://github.com/yshui/picom/blob/next/picom.sample.conf
 To get a window class for a exclude / include, use `xwininfo` or `xprop` & click the window you want.
 Remember to use window classes whenever you can, window titles can be very finicky.
 The 2nd part of the window class is the relevant bit, for example: 
 For `Application.Navigator`, You would put `class_g = 'Navigator'` in your picom config
 
-[Arch wiki page](https://wiki.archlinux.org/title/Picom)
+[Nuxsh's Page About Picom Forks](https://nuxsh.is-a.dev/blog/picom.html)
+[Arch Wiki Page](https://wiki.archlinux.org/title/Picom)
 
 #END f
 
