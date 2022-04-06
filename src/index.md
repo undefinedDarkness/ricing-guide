@@ -1,5 +1,6 @@
 # 🍱 Index
 
+#verbatim
 <div class="block-center">
 <div class="mermaid">
 graph TD
@@ -11,14 +12,15 @@ graph TD
     C --> F[FAQ]
     C --> G[How to rice thing]
     C --> H[Terminal]
-    click D "/ricing-guide/design.html"
-    click E "/ricing-guide/useful.html"
-    click F "/ricing-guide/faq.html"
-    click G "/ricing-guide/how-to-rice-thing.html"
-    click H "/ricing-guide/terminal.html"
+    click D "/out/ricing/design.html"
+    click E "/out/ricing/useful.html"
+    click F "/out/ricing/faq.html"
+    click G "/out/ricing/how-to-rice-thing.html"
+    click H "/out/ricing/terminal.html"
     </div>
     <script defer src="https://cdn.jsdelivr.net/npm/mermaid@8.14.0/dist/mermaid.min.js"></script>
 </div>
+#END verbatim
 
 ## Credits
 Most of the following are members of the r/unixporn discord server.

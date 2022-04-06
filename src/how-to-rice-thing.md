@@ -1,8 +1,13 @@
 # How do I rice THING?
 
-<details><summary>Chromium</summary>
-<p>
+#f Emacs
+The youtube channel [System Crafters](https://www.youtube.com/c/systemcrafters) has already created a significant amount of resources regarding getting starting with emacs, 
+You can find them [here](https://wiki.systemcrafters.cc/emacs/) - See the Emacs From Scratch series for an indepth series of writinig your own configuraton,
+But as usual, Do not follow them word for word, Experiment your own and try to understand what each and every setting does :D
 
+Customizing emacs is 90% about your own passion, There is a lot you can do
+
+#f Chromium
 Most chromium based browers do not support anything more than marginal theming,
 It is possible to affect a few changes by your gtk theme [[example](https://github.com/phocus/gtk/blob/master/scss/gtk-3.0/applications/_chromium.scss)]
 
@@ -11,13 +16,9 @@ You can also make your own Chromium theme tho again, these are quite limited in 
 Vivaldi however allows injecting CSS into the browser UI, I found a few links on it but your mileage may vary
 https://www.reddit.com/r/vivaldibrowser/comments/gso6bx/questions_about_css_customisations/
 https://forum.vivaldi.net/topic/10629/vivaldi-ui-customisations
+#END f
 
-</p>
-</details>
-
-<details><summary>Firefox</summary>
-<p>
-
+#f Firefox
 You can customize the User Interface (Chrome) with Firefox CSS, see the following:
 - [Getting started guide](https://www.reddit.com/r/FirefoxCSS/wiki/index/tutorials)
 - [How to create & live debug userChrome.css](https://www.reddit.com/r/FirefoxCSS/comments/73dvty/tutorial_how_to_create_and_livedebug_userchromecss/)
@@ -37,7 +38,6 @@ You can use any of the selectors available for [@-moz-document](https://develope
 *NOTE: Stylus can also export to this format for easy usage*
 
 #### Start Page
-
 You will need basic knowledge of HTML, CSS & JS.
 [MDN](https://developer.mozilla.org/en-US/) is a nice place to learn.
 
@@ -45,13 +45,9 @@ Firefox has quite a few limitations on setting local files as your start page (n
 
 Then use [this extension](https://addons.mozilla.org/en-US/firefox/addon/new-tab-override/) to set the URL.
 Chromium users can use [this](https://chrome.google.com/webstore/detail/custom-new-tab-url/mmjbdbjnoablegbkcklggeknkfcjkjia) instead (Chrome places no limitations).
+#END f
 
-</p>
-</details>
-
-<details><summary>GTK</summary>
-<p>
-
+#f GTK
 This is most easily accomplished by forking an existing theme and modifying them. Most themes are open source and
 are easily modifiable (if you know CSS). Phocus is a nice one to start with since its code is clean scss and well structured, (https://github.com/phocus/gtk)
 *NOTE: Phocus is not a GTK2 theme so it will not show up in `lxappearance`, Set your gtk theme using [settings.ini](https://wiki.archlinux.org/title/GTK#Basic_theme_configuration) instead,
@@ -76,7 +72,6 @@ After installing, you have to make changes the following changes
 **For QT4:** Edit the /etc/xdg/Trolltech.conf (system-wide) or ~/.config/Trolltech.conf (user-specific) file:
 
 ~/.config/Trolltech.conf
-
 ```ini
 [Qt]
 style=GTK+
@@ -94,12 +89,9 @@ To enable it on other systems, after installing the qgnomeplatform package, set 
 QT_QPA_PLATFORMTHEME=gnome
 ```
 
-</p>
-</details>
+#END f
 
-<details><summary>Neovim / Vim</summary>
-<p>
-
+#f Neovim / Vim
 This is an interesting one. If you use a premade colorscheme, chances are, a [base16](https://github.com/chriskempson/base16) or other vim theme already exists for it. Otherwise, you can make a base16 theme or make one from a wide variety of templates. There even exist generators for it. ([Pinto](https://pintovim.dev/), [Vivify](https://bytefluent.com/vivify/))
 And, of course, if a colorscheme is similar to yours, you can easily fork it and modify.
 
@@ -125,15 +117,13 @@ endfunc
 but this doesnt work that well for treesitter, in which case using [this code from treesitter-playground](https://github.com/nvim-treesitter/playground/blob/master/lua/nvim-treesitter-playground/hl-info.lua) works a fair bit better,
 to use them more easily, create a keybinding for `SynStack()` or `require('hl-info').show_hl_captures()` respectivley
 
-</p>
-</details>
+#END f
 
-### Terminal
+#f Terminal
 Moved section to [terminal](terminal.html)
+#END f
 
-<details><summary>Picom</summary>
-<p>
-
+#f Picom
 *The definition of compositor changes from X11 to Wayland, I am talking about X11 only:*
 Compositor is a thing that sits between your window manager and X11 and makes stuff like transparency work. Recently, however, compositors have been used to implement blur, rounded corners and animations for a window manager to behave more like a desktop enviroment.
 
@@ -199,12 +189,9 @@ For `Application.Navigator`, You would put `class_g = 'Navigator'` in your picom
 [Nuxsh's Page About Picom Forks](https://nuxsh.is-a.dev/blog/picom.html)
 [Arch Wiki Page](https://wiki.archlinux.org/title/Picom)
 
-<p>
-</details>
+#END f
 
-<details><summary>Wallpapers</summary>
-<p>
-
+#f Wallpapers
 Good places to look for wallpapers are:
 - https://images.google.com/
 Includes a search by colour and resolution, so you can find a wallpaper matching your screen size.
@@ -258,6 +245,6 @@ Their usage is fairly simple:
 `feh --bg-tile |path-to-wallpaper|` or if you have a bitmap you can use `xsetroot -bitmap |path-to-bitmap-wallpaper|`, or manually tile it in your image editor of choice.
 
 You can find a bunch of sources here: https://notes.neeasade.net/tiled-wallpaper-sources.html, Their site has a bunch of cool ricing related stuff too.
+#END f
 
-</p>
-</details>
+### 
