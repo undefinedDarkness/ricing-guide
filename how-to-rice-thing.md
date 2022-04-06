@@ -1,6 +1,7 @@
 # How do I rice THING?
 
 <details><summary>Chromium</summary>
+
 Most chromium based browers do not support anything more than marginal theming,
 It is possible to affect a few changes by your gtk theme [[example](https://github.com/phocus/gtk/blob/master/scss/gtk-3.0/applications/_chromium.scss)]
 
@@ -9,9 +10,11 @@ You can also make your own Chromium theme tho again, these are quite limited in 
 Vivaldi however allows injecting CSS into the browser UI, I found a few links on it but your mileage may vary
 https://www.reddit.com/r/vivaldibrowser/comments/gso6bx/questions_about_css_customisations/
 https://forum.vivaldi.net/topic/10629/vivaldi-ui-customisations
+
 </details>
 
 <details><summary>Firefox</summary>
+
 You can customize the User Interface (Chrome) with Firefox CSS, see the following:
 - [Getting started guide](https://www.reddit.com/r/FirefoxCSS/wiki/index/tutorials)
 - [How to create & live debug userChrome.css](https://www.reddit.com/r/FirefoxCSS/comments/73dvty/tutorial_how_to_create_and_livedebug_userchromecss/)
@@ -31,6 +34,7 @@ You can use any of the selectors available for [@-moz-document](https://develope
 *NOTE: Stylus can also export to this format for easy usage*
 
 #### Start Page
+
 You will need basic knowledge of HTML, CSS & JS.
 [MDN](https://developer.mozilla.org/en-US/) is a nice place to learn.
 
@@ -38,9 +42,11 @@ Firefox has quite a few limitations on setting local files as your start page (n
 
 Then use [this extension](https://addons.mozilla.org/en-US/firefox/addon/new-tab-override/) to set the URL.
 Chromium users can use [this](https://chrome.google.com/webstore/detail/custom-new-tab-url/mmjbdbjnoablegbkcklggeknkfcjkjia) instead (Chrome places no limitations).
+
 </details>
 
 <details><summary>GTK</summary>
+
 This is most easily accomplished by forking an existing theme and modifying them. Most themes are open source and
 are easily modifiable (if you know CSS). Phocus is a nice one to start with since its code is clean scss and well structured, (https://github.com/phocus/gtk)
 *NOTE: Phocus is not a GTK2 theme so it will not show up in `lxappearance`, Set your gtk theme using [settings.ini](https://wiki.archlinux.org/title/GTK#Basic_theme_configuration) instead,
@@ -65,6 +71,7 @@ After installing, you have to make changes the following changes
 **For QT4:** Edit the /etc/xdg/Trolltech.conf (system-wide) or ~/.config/Trolltech.conf (user-specific) file:
 
 ~/.config/Trolltech.conf
+
 ```ini
 [Qt]
 style=GTK+
