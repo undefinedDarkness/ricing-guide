@@ -1,6 +1,7 @@
 # How do I rice THING?
 
-<details><summary>Chromium</summary>
+<details>
+<summary>Chromium</summary>
 
 Most chromium based browers do not support anything more than marginal theming,
 It is possible to affect a few changes by your gtk theme [[example](https://github.com/phocus/gtk/blob/master/scss/gtk-3.0/applications/_chromium.scss)]
@@ -13,7 +14,8 @@ https://forum.vivaldi.net/topic/10629/vivaldi-ui-customisations
 
 </details>
 
-<details><summary>Firefox</summary>
+<details>
+<summary>Firefox</summary>
 
 You can customize the User Interface (Chrome) with Firefox CSS, see the following:
 - [Getting started guide](https://www.reddit.com/r/FirefoxCSS/wiki/index/tutorials)
@@ -45,7 +47,8 @@ Chromium users can use [this](https://chrome.google.com/webstore/detail/custom-n
 
 </details>
 
-<details><summary>GTK</summary>
+<details>
+<summary>GTK</summary>
 
 This is most easily accomplished by forking an existing theme and modifying them. Most themes are open source and
 are easily modifiable (if you know CSS). Phocus is a nice one to start with since its code is clean scss and well structured, (https://github.com/phocus/gtk)
@@ -91,7 +94,9 @@ QT_QPA_PLATFORMTHEME=gnome
 
 </details>
 
-<details><summary>Neovim / Vim</summary>
+<details>
+<summary>Neovim / Vim</summary>
+
 This is an interesting one. If you use a premade colorscheme, chances are, a [base16](https://github.com/chriskempson/base16) or other vim theme already exists for it. Otherwise, you can make a base16 theme or make one from a wide variety of templates. There even exist generators for it. ([Pinto](https://pintovim.dev/), [Vivify](https://bytefluent.com/vivify/))
 And, of course, if a colorscheme is similar to yours, you can easily fork it and modify.
 
@@ -122,7 +127,9 @@ to use them more easily, create a keybinding for `SynStack()` or `require('hl-in
 ### Terminal
 Moved section to [terminal](terminal.html)
 
-<details><summary>Picom</summary>
+<details>
+<summary>Picom</summary>
+
 *The definition of compositor changes from X11 to Wayland, I am talking about X11 only:*
 Compositor is a thing that sits between your window manager and X11 and makes stuff like transparency work. Recently, however, compositors have been used to implement blur, rounded corners and animations for a window manager to behave more like a desktop enviroment.
 
@@ -189,8 +196,9 @@ For `Application.Navigator`, You would put `class_g = 'Navigator'` in your picom
 [Arch Wiki Page](https://wiki.archlinux.org/title/Picom)
 
 </details>
+<details>
+<summary>Wallpapers</summary>
 
-<details><summary>Wallpapers</summary>
 Good places to look for wallpapers are:
 - https://images.google.com/
 Includes a search by colour and resolution, so you can find a wallpaper matching your screen size.
@@ -245,6 +253,3 @@ Their usage is fairly simple:
 
 You can find a bunch of sources here: https://notes.neeasade.net/tiled-wallpaper-sources.html, Their site has a bunch of cool ricing related stuff too.
 </details>
-
-
-### 
