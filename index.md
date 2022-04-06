@@ -1,6 +1,5 @@
 # 🍱 Index
 
-#verbatim
 <div class="block-center">
 <div class="mermaid">
 graph TD
@@ -20,7 +19,6 @@ graph TD
     </div>
     <script defer src="https://cdn.jsdelivr.net/npm/mermaid@8.14.0/dist/mermaid.min.js"></script>
 </div>
-#END verbatim
 
 ## Credits
 Most of the following are members of the r/unixporn discord server.
