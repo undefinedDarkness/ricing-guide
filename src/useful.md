@@ -1,4 +1,4 @@
-# {📚} Useful Ricing Knowledge
+# 📚 Useful Ricing Knowledge
 
 #f How to RTFM & Get help
 

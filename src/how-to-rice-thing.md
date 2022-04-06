@@ -7,43 +7,6 @@ But as usual, Do not follow them word for word, Experiment your own and try to u
 
 Customizing emacs is 90% about your own passion, There is a lot you can do
 
-#### How to make it fast
-A pretty useless pursuit since emacs comes with its daemon mode which ought to take care of most people's need for speed,
-But this is kinda fun so a few basic tips are here to make it faster at starting up:
-
->>>
-Some of these techniques for fast startup I've documented in our [FAQ](https://github.com/hlissner/doom-emacs/blob/develop/docs/faq.org#how-does-doom-start-up-so-quickly).
-
-The highlights are:
-
-- I suppress garbage collection during startup,
-- I lazy load our package manager. This means avoiding package-initialize or, if you use straight like Doom does, bootstrapping straight. It also means no 200+ package-installed-p checks on startup.
-- Package autoloads files are concatenated into one, large file. This saves on hundreds of file reads at startup (assuming you have hundreds of packages installed). I byte-compile it too.
-- Almost all our packages are lazy loaded (iirc, 2-3 out of 300 are not).
-
-The biggest gains come from lazy loading packages. Especially the big ones, like org, helm, and magit. Doom goes a bit further with this. A couple examples:
-
-- Dozens of packages (like recentf, savehist, autorevert, etc) are deferred until your first input (pre-command-hook) or the first file is opened (:before after-find-file).
-- Org's babel packages aren't loaded all at once with org-babel-do-load-languages, but on demand when their src blocks are encountered (fontified) or executed. Same with its export backends.
-- Doom loads some larger packages incrementally while it is idle. i.e. After 2s afk, it loads one of dash, f, s, with-editor, git-commit, package, eieio, lv, then transient every second, before finally loading magit (these are its dependencies). This process bows out when it detects user activity, and continues later when Emacs has been idle again for 2s. This helps with that first-time-load delay when starting magit. org and helm get similar treatment.
-- If you use the daemon, the incremental-loader just loads them all immediately.
-
-Besides that, I've collected tidbits of elisp over the years that appear to help startup time, sometimes inexplicably. Here are a couple off the top of my head:
-
-    (add-to-list 'default-frame-alist '(font . "Fira Code-14")) instead of (set-frame-font "Fira Code-14" t t). The latter does more work than the former, under the hood.
-
-    (setq frame-inhibit-implied-resize t) -- Emacs resizes the (GUI) frame when your newly set font is larger (or smaller) than the system default. This seems to add 0.4-1s to startup.
-
-    (setq initial-major-mode 'fundamental-mode) -- I don't need the scratch buffer at startup. I have it a keybind away if I do. Starting text-mode at startup circumvents a couple startup optimizations (by eager-loading a couple packages associated with text modes, like flyspell), so starting it in fundamental-mode instead helps a bit.
-
-    An odd one: tty-run-terminal-initialization adds a couple seconds to startup for tty Emacs users when it is run too early. After deferring it slightly, this doesn't appear to be an issue anymore. Not a big tty Emacs user, so YMMV.
->>>hlissner - Author of DOOM Emacs
-(check the FAQ linked, it has a few more useful tricks)
-
-There are also a few useful tricks documented [in f2k's emacs](github.com/fortuneteller2k/.emacs.d) config as well.
-
-#END f
-
 #f Chromium
 Most chromium based browers do not support anything more than marginal theming,
 It is possible to affect a few changes by your gtk theme [[example](https://github.com/phocus/gtk/blob/master/scss/gtk-3.0/applications/_chromium.scss)]
