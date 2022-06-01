@@ -12,11 +12,11 @@ graph TD
     C --> F[FAQ]
     C --> G[How to rice thing]
     C --> H[Terminal]
-    click D "/out/ricing/design.html"
-    click E "/out/ricing/useful.html"
-    click F "/out/ricing/faq.html"
-    click G "/out/ricing/how-to-rice-thing.html"
-    click H "/out/ricing/terminal.html"
+    click D "/ricing/design.html"
+    click E "/ricing/useful.html"
+    click F "/ricing/faq.html"
+    click G "/ricing/how-to-rice-thing.html"
+    click H "/ricing/terminal.html"
     </div>
     <script defer src="https://cdn.jsdelivr.net/npm/mermaid@8.14.0/dist/mermaid.min.js"></script>
 </div>
