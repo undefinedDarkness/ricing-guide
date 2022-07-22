@@ -30,7 +30,10 @@ box () {
 f () {
 	content=$1
 	shift
-	printf "<details open>\n<summary>%s</summary>\n<p>\n%s\n</p>\n</details>\n" "${*#'#f '}" "$content"
+	local title="${*#'#f '}"
+	local title_id=${title,,}
+	title_id=${title_id/' '/'-'}
+	printf "<details open>\n<summary id=\"%s\">%s</summary>\n<p>\n%s\n</p>\n</details>\n" "$title_id" "$title" "$content"
 }
 
 # Right align text

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" href="/favicon.png" />
+		<meta name="author" content="nes" />
+		<title>🥟 A Ricing Roadmap</title>
+		<link rel="stylesheet" href="/assets/styles.css" />
+	</head>
+	<body>
+	  <article>
+
+<header>
+<h1>🥟 A Ricing Roadmap</h1>
+</header>
+<br/>
+There is a lot of choice when you start ricing and there are so many things you can dive into that it can easily become overwhelming, So this is a kind of road map I wrote of what things you should do in what order to really understand if you like ricing. Let's begin from the perspective of someone who has recently installed a common distribution (let's go w/ ubuntu or one of its derivatives) and has seen one of the posts on unixporn and wants to also make his desktop look like it.<br/>
+<br/>
+To have some kind of idea of what our final product will be, Let us aim for something similar to this (w/ the same stuff, style will be different ofc)<br/>
+<br/>
+<img src="https://i.redd.it/ge6i053ncpb91.png" alt="example rice" title="example rice" loading="lazy" /><br/>
+<br/>
+<h2 id="##-🏃 Escaping The DE"> 🏃 Escaping The DE</h2>
+<p>
+First things first we have the ecosystem of the preinstalled desktop environment to the safe lands of window managers.<br/>
+<br/>
+Of course you can rice a DE, but most rices are done on a WM so I'll follow that.<br/>
+<br/>
+I would recommend Bspwm, Openbox & i3 since although being beginner friendly they can be flexible enough to fit most desires, Besides many people are familiar with them and there exist lots of resources for them.<br/>
+<br/>
+Switching to a WM is as simple as installing the necessary package, hopefully this is as simple as <code># $PKGMANAGER install $WM</code> but if not you'll need to compile the wm from source code, Instructions for doing so should be available in either a COMPILE.md or INSTALL or such.<br/>
+<br/>
+If you choose i3 or bspwm, You will need to take some time to become familiar with the method of navigating windows by way of keyboard shortcuts and with the tiling layout in general, I'd suggest you take the time to get used to it before continuing on.<br/>
+<br/>
+* bspwm in particular requires a fair amount of pre requisite knowledge in sh scripting and such. You need sxhkd for defining key bindings.<br/>
+<br/>
+</p>
+<h2 id="##-Settling Down"> Settling Down</h2>
+<p>
+<br/>
+</p>
+<h3 id="###-Finding / Creating a color scheme"> Finding / Creating a color scheme</h3>
+<p>
+This is the foundation the rest of your design will sit upon, The colors you choose can easily make or break a rice, So it is essential to pick a good looking one and build everything around it.<br/>
+<br/>
+This is largely a matter of personal preference of what / how many colors you choose but generally color schemes have 16 colors with or without foreground and background colors.<br/>
+<br/>
+Most terminals require 2 shades of white black red cyan magenta yellow blue & green (16 colors in total), One "dim" shade and one "bright" shade, but generally the bright shade just needs to be the same color and distinguishably different from the "dim" shade<br/>
+<br/>
+I'd also suggest having colors (these can be the same) to represent focus and inactivity and various shades of background colors to visibly identify how high up a UI element is in the z space. (What is more in front of you and what is more behind)<br/>
+<br/>
+There is also a theming shortcut called <a href="https://github.com/chriskempson/base16">"base16"</a> which can greatly streamline the ricing process but brings with it its own drawbacks. <!-- TODO Make Article on it --><br/>
+<br/>
+</p>
+<h3 id="###-Wallpaper"> Wallpaper</h3>
+<p>
+<br/>
+After some time, looking at the plain black default background gets tiring so let's set a pretty background, This may seem like a small step but the background you choose can heavily affect the colors you can use in the rest of your rice. So ideally pick something you can contrast easily and one that isn't visually busy, Your focus shouldn't be immediately attracted to wallpaper at first sight.<br/>
+* You can find some good places to find wallpapers here: <a href="https://nes.is-a.dev/ricing-guide/how-to-rice-thing.html#wallpapers">https://nes.is-a.dev/ricing-guide/how-to-rice-thing.html#wallpapers</a><br/>
+<br/>
+Especially for minimalist window managers, it is common that they do not include wallpaper setter in which case an external application (usually <code>feh</code>) needs to be used.<br/>
+<br/>
+To illustrate: <img src="https://media.discordapp.net/attachments/635625973764849684/998503072781320282/9_-_lmDxmn6.jpg?width=776&height=485" alt="" title="" loading="lazy" /> is an example of what I'd call a good wallpaper, it can easily with a color scheme like melange or gruvbox material and there is plenty of contrast to place any desktop widgets if I so choose, of course you have to like it too, its your desktop after all.<br/>
+			<footer>
+				<a href="/out/index.html">Return To Index</a>
+			</footer>
+	  </article>
+      <script src="/assets/ipage.js" defer></script>
+	</body>
+</html>

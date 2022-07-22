@@ -16,16 +16,18 @@
 </header>
 <br/>
 <details open>
-<summary>Emacs</summary>
+<summary id="emacs">Emacs</summary>
 <p>
 The youtube channel <a href="https://www.youtube.com/c/systemcrafters">System Crafters</a> has already created a significant amount of resources regarding getting starting with emacs, <br/>
 You can find them <a href="https://wiki.systemcrafters.cc/emacs/">here</a> - See the Emacs From Scratch series for an indepth series of writinig your own configuraton,<br/>
 But as usual, Do not follow them word for word, Experiment your own and try to understand what each and every setting does :D<br/>
 <br/>
 Customizing emacs is 90% about your own passion, There is a lot you can do<br/>
+</p>
+</details>
 <br/>
 <details open>
-<summary>Chromium</summary>
+<summary id="chromium">Chromium</summary>
 <p>
 Most chromium based browers do not support anything more than marginal theming,<br/>
 It is possible to affect a few changes by your gtk theme <a href="https://github.com/phocus/gtk/blob/master/scss/gtk-3.0/applications/_chromium.scss">[example</a>]<br/>
@@ -39,7 +41,7 @@ Vivaldi however allows injecting CSS into the browser UI, I found a few links on
 </details>
 <br/>
 <details open>
-<summary>Firefox</summary>
+<summary id="firefox">Firefox</summary>
 <p>
 You can customize the User Interface (Chrome) with Firefox CSS, see the following:<br/>
 <ul>
@@ -76,7 +78,7 @@ Chromium users can use <a href="https://chrome.google.com/webstore/detail/custom
 </details>
 <br/>
 <details open>
-<summary>GTK</summary>
+<summary id="gtk">GTK</summary>
 <p>
 This is most easily accomplished by forking an existing theme and modifying them. Most themes are open source and<br/>
 are easily modifiable (if you know CSS). Phocus is a nice one to start with since its code is clean scss and well structured, (<a href="https://github.com/phocus/gtk">https://github.com/phocus/gtk</a>)<br/>
@@ -131,7 +133,7 @@ To enable it on other systems, after installing the qgnomeplatform package, set 
 </details>
 <br/>
 <details open>
-<summary>Neovim / Vim</summary>
+<summary id="neovim-/ vim">Neovim / Vim</summary>
 <p>
 This is an interesting one. If you use a premade colorscheme, chances are, a <a href="https://github.com/chriskempson/base16">base16</a> or other vim theme already exists for it. Otherwise, you can make a base16 theme or make one from a wide variety of templates. There even exist generators for it. (<a href="https://pintovim.dev/">Pinto</a>, <a href="https://bytefluent.com/vivify/">Vivify</a>)<br/>
 And, of course, if a colorscheme is similar to yours, you can easily fork it and modify.<br/>
@@ -165,14 +167,14 @@ to use them more easily, create a keybinding for <code>SynStack()</code> or <cod
 </details>
 <br/>
 <details open>
-<summary>Terminal</summary>
+<summary id="terminal">Terminal</summary>
 <p>
 Moved section to <a href="terminal.html">terminal</a><br/>
 </p>
 </details>
 <br/>
 <details open>
-<summary>Picom</summary>
+<summary id="picom">Picom</summary>
 <p>
 <i>The definition of compositor changes from X11 to Wayland, I am talking about X11 only:</i><br/>
 Compositor is a thing that sits between your window manager and X11 and makes stuff like transparency work. Recently, however, compositors have been used to implement blur, rounded corners and animations for a window manager to behave more like a desktop enviroment.<br/>
@@ -186,14 +188,14 @@ You're in luck, lots of choice for you. You can use <code>picom</code> / <code>x
 <br/>
 I still suggest using picom as it has the latest technology / optimizations, beside being the<br/>
 most commonly used & most supported one.<br/>
-<i>Forcing application transparency has very little purpose in most cases however, and most user interface's are not designed with that in mind (eg: nvim)</i> <span class="in-margin">⛔<br/></span>
+⛔ <i>Forcing application transparency has very little purpose in most cases however, and most user interface's are not designed with that in mind (eg: nvim)</i> <br/>
 <br/>
 </p>
 <h4 id="####-I want blur too"> I want blur too</h4>
 <p>
 Just build the latest <a href="https://github.com/yshui/picom">master</a> and use picom with the --experimental-backends option.<br/>
 To build picom from source, follow the instructions in the <a href="https://github.com/yshui/picom#build">README</a><br/>
-<i>Be very caution when using blur, excessive blur can make a rice look bad very easily.</i> <span class="in-margin">⛔<br/></span>
+⛔ <i>Be very caution when using blur, excessive blur can make a rice look bad very easily.</i> <br/>
 <br/>
 </p>
 <h4 id="####-I want rounded corners too"> I want rounded corners too</h4>
@@ -252,7 +254,10 @@ For <code>Application.Navigator</code>, You would put <code>class_g = 'Navigator
 </p>
 </details>
 <br/>
-#f Wallpapers
+<details open>
+<summary id="wallpapers">Wallpapers</summary>
+<p>
+<br/>
 Good places to look for wallpapers are:<br/>
 <ul>
 <li><a href="https://images.google.com/">https://images.google.com/</a><br/>

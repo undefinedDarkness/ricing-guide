@@ -143,14 +143,14 @@
 
 **Notes:**   
 
--   Fallback refers to the ability to fallback fonts, that is find a character in the next font in a list if it is not in the first one.
--   Advanced refers to the capability of advanced open type features, primarily stylistic sets
+-   *Fallback* refers to the ability to fallback fonts, that is find a character in the next font in a list if it is not in the first one.
+-   *Advanced* refers to the capability of advanced open type features, primarily stylistic sets
 -   The foot terminal is wayland exclusive
 -   If you're thinking about using st, I highly suggest you use [st-flexipatch](https://github.com/bakkeby/st-flexipatch) right from the start, It will save you a lot of time
 -   VTE refers to any terminal that uses the [vte](https://gitlab.gnome.org/GNOME/vte) library as a shortcut, this does almost 99.99% of the heavy lifting for you so behaviour across different vte terminals tends to be the same, for example, gnome-terminal, xfce-terminal, [tym](https://github.com/endaaman/tym) all leverage the vte library.
 
 [Fork for ligatures in alacritty](https://github.com/zenixls2/alacritty) - Even the alacritty author recommends you simply use another terminal if you want ligatures.  
-It is possible to enable bitmap fonts in kitty, using the `kitty-bitmap` AUR package, [More instructions](https://github.com/slavfox/Cozette#kitty) - The author does not and will never support bitmap fonts  
+It is possible to enable bitmap fonts in kitty, using the `kitty-bitmap` AUR package, [More instructions](https://github.com/slavfox/Cozette#kitty) - The author does not and will never support bitmap fonts  - *I havent got this to work personally but ymmv*
 
 Issue page for sixel support in VTE: <https://gitlab.gnome.org/GNOME/vte/-/issues/253>  
 

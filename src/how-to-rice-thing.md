@@ -6,6 +6,7 @@ You can find them [here](https://wiki.systemcrafters.cc/emacs/) - See the Emacs 
 But as usual, Do not follow them word for word, Experiment your own and try to understand what each and every setting does :D
 
 Customizing emacs is 90% about your own passion, There is a lot you can do
+#END f
 
 #f Chromium
 Most chromium based browers do not support anything more than marginal theming,
@@ -91,6 +92,7 @@ QT_QPA_PLATFORMTHEME=gnome
 
 #END f
 
+<!--
 #f Neovim / Vim
 This is an interesting one. If you use a premade colorscheme, chances are, a [base16](https://github.com/chriskempson/base16) or other vim theme already exists for it. Otherwise, you can make a base16 theme or make one from a wide variety of templates. There even exist generators for it. ([Pinto](https://pintovim.dev/), [Vivify](https://bytefluent.com/vivify/))
 And, of course, if a colorscheme is similar to yours, you can easily fork it and modify.
@@ -118,6 +120,7 @@ but this doesnt work that well for treesitter, in which case using [this code fr
 to use them more easily, create a keybinding for `SynStack()` or `require('hl-info').show_hl_captures()` respectivley
 
 #END f
+-->
 
 #f Terminal
 Moved section to [terminal](terminal.html)
@@ -134,12 +137,12 @@ You're in luck, lots of choice for you. You can use `picom` / `xcompmgr` / `comp
 
 I still suggest using picom as it has the latest technology / optimizations, beside being the
 most commonly used & most supported one.
-*Forcing application transparency has very little purpose in most cases however, and most user interface's are not designed with that in mind (eg: nvim)* IM:⛔
+⛔ *Forcing application transparency has very little purpose in most cases however, and most user interface's are not designed with that in mind (eg: nvim)* 
 
 #### I want blur too
 Just build the latest [master](https://github.com/yshui/picom) and use picom with the --experimental-backends option.
 To build picom from source, follow the instructions in the [README](https://github.com/yshui/picom#build)
-*Be very caution when using blur, excessive blur can make a rice look bad very easily.* IM:⛔
+⛔ *Be very caution when using blur, excessive blur can make a rice look bad very easily.* 
 
 #### I want rounded corners too
 Again, picom master has the thing for you, picom has implemented rounder corners in the xrender and legacy glx backends.
@@ -192,6 +195,7 @@ For `Application.Navigator`, You would put `class_g = 'Navigator'` in your picom
 #END f
 
 #f Wallpapers
+
 Good places to look for wallpapers are:
 - https://images.google.com/
 Includes a search by colour and resolution, so you can find a wallpaper matching your screen size.
