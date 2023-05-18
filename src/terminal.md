@@ -202,7 +202,7 @@ Example prompt (this is gentoo's default one):
 
 Terminals generally support a couple or more of 3 color modes, they are:  
 
--   True Color (Full RGB Color)
+-   24 Bit Colour True Color (Full RGB Color)
 -   256 Color
 -   8 Color (Everything supports this one)
 
@@ -295,4 +295,3 @@ Where <N> is one of the following:
 -   Italic `\033[3m`
 -   Underline `\033[4m`
 -   Reversed `\033[7m`
-

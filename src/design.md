@@ -1,7 +1,23 @@
+<style>
+	.content-box-demo {
+		padding: 1em;
+		background-color: #fdffdf;
+		color: #000;
+	}
+	.content-box-demo > * {
+		padding: 1em;
+		border: 5px solid #737373;
+		background-color:#e3dcff;
+	}
+	.content-box-demo > * > * {
+		padding: 1em;
+		background-color:#cff0fb;
+	}
+</style>
 # 🎨 Design
 Stuff related to the general design of a rice
 
-#f Typography
+## Typography
 > The style and appearance of printed matter.
 
 This is one place where you can really stand out and using a good font can make all the difference for both the looks of your rice, as well as its usability.
@@ -87,15 +103,17 @@ Some distributions have disabled bitmap fonts by default, but you can fix it by 
 cd /etc/fonts/conf.d/
 sudo rm -rf 70-no-bitmaps.conf && sudo ln -s ../conf.avail/70-yes-bitmaps.conf .
 ```
+<!--TODO: -->
 ##### 
 Commonly used bitmap fonts:
 <div class='showcase horizontal'>
-[![Cozette](/assets/images/font-previews/CozetteVector.png)](https://github.com/slavfox/Cozette)
-[![GohuFont](/assets/images/font-previews/Gohu-GohuFont.webp)](https://font.gohu.org)
-[![Terminus](/assets/images/font-previews/Terminus.png)](https://terminus-font.sourceforge.net)	
-[![Unifont](/assets/images/font-previews/Unifont-Nerd-Font-Complete.png)](https://unifoundry.com/unifont/)
-<span>Cherry</span>
-<span>Scientifica</span>
+
+[![Cozette](../embed/font-previews/CozetteVector.png)](https://github.com/slavfox/Cozette)
+[![Gohu-GohuFont](../embed/font-previews/GohuFont-Medium.png)](https://font.gohu.org/)
+[![Terminus](../embed/font-previews/Terminus.png)](https://terminus-font.sourceforge.net)	
+[![Unifont](../embed/font-previews/Unifont-Nerd-Font-Complete.png)](https://unifoundry.com/unifont/)
+[![Cherry](../embed/font-previews/cherry-11.png)](https://github.com/turquoise-hexagon/cherry)
+[![Scientifica](../embed/font-previews/sci0.png)](https://github.com/nerdypepper/scientifica)
 </div>
 
 [Repository Of Bitmap Fonts](https://github.com/Tecate/bitmap-fonts)
@@ -106,13 +124,9 @@ Commonly used bitmap fonts:
 #### Installing Fonts
 Once you have your font files (usually in .ttf or .otf), You can install them by simply moving them to `~/.local/share/fonts`
 
-#END f
 
-## Conventions
-#f CSS Box Model
-<aside>
-<p>This is important in many parts of ricing,
-and is the general method to define spacing in most applications.
+## CSS Box Model
+This is generally how visual spacing works in most GUI applications.
 
 Content is your text, image whatever
 Padding is spacing around the content but still within the box
@@ -120,8 +134,13 @@ Border is a border around the box
 Margin is spacing between the box and its siblings / parent box.
 
 [Better explanation](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
-</p>
 
-![Box Model Illustration](/assets/images/box-model.webp)
-</aside>
-#END f
+<div class="content-box-demo">
+MARGIN
+<div>
+PADDING
+<div>
+CONTENT
+</div>
+</div>
+</div>

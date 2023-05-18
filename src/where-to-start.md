@@ -1,41 +1,57 @@
 # 🥟 A Ricing Roadmap
 
-There is a lot of choice when you start ricing and there are so many things you can dive into that it can easily become overwhelming, So this is a kind of road map I wrote of what things you should do in what order to really understand if you like ricing. Let's begin from the perspective of someone who has recently installed a common distribution (let's go w/ ubuntu or one of its derivatives) and has seen one of the posts on unixporn and wants to also make his desktop look like it.
+There is a lot of choice when you start ricing and there are so many things you can dive into that it can easily become overwhelming, So this is a kind of road map I wrote of what things you should do in what order to really understand if you like ricing. 
+
+**DISCLAIMER**:  There are many different ways to go about ricing, After all ricing is about creative expression and even more about making your desktop comfortable for yourself. There are a million different things you can change and add to make it more personal.
+
+Let's begin:
+
+ From the perspective of someone who has recently installed a common distribution and has seen one of the posts on unixporn and wants to also make his desktop look like it.
 
 To have some kind of idea of what our final product will be, Let us aim for something similar to this (w/ the same stuff, style will be different ofc)
 
 ![example rice](https://i.redd.it/ge6i053ncpb91.png)
 
-### Necessary Skills
-Just like a recipe wont teach you how to boil water, this guide can't explain every little thing either so basic knowledge of ricing terminology is required, Along with the *rare* ability to read documentation and manual pages. Of course the ability to edit and understand basic configuration files is also required. Knowledge of some basic parts of linux will also be extremely helpful (Stuff like hidden directories, file paths, package manager etc).
+### Necessary Pre-requisite Knowledge
+- Ricing terminology [[LEARN]](./terminology)
+- Basic linux knowledge
+    - Filesystem Navigation
+    - Configuration File Editing
+    - Install packages *(varies a little by distro)*
 
-## 🏃 Escaping The DE
-First things first we have the ecosystem of the preinstalled desktop environment to the safe lands of window managers.
+## Installing a WM
 
-Of course you can rice a DE, but most rices are done on a WM so I'll follow that.
-
-I would recommend Bspwm, Openbox & i3 since although being beginner friendly they can be flexible enough to fit most desires, Besides many people are familiar with them and there exist lots of resources for them.
-
-Switching to a WM is as simple as installing the necessary package, hopefully this is as simple as `# $PKGMANAGER install $WM` but if not you'll need to compile the wm from source code, Instructions for doing so should be available in either a COMPILE.md or INSTALL or such.
-
-If you choose i3 or bspwm, You will need to take some time to become familiar with the method of navigating windows by way of keyboard shortcuts and with the tiling layout in general, I'd suggest you take the time to get used to it before continuing on.
-
-* bspwm in particular requires a fair amount of pre requisite knowledge in sh scripting and such. You need sxhkd for defining key bindings.
 
 ## Settling Down
 
 ### Finding / Creating a color scheme
 <!-- NEEDS A LOT OF WORK. -->
-This is the foundation the rest of your design will sit upon, The colors you choose can easily make or break a rice, So it is essential to pick a good looking one and build everything around it.
+This is the foundation the rest of your design will sit upon, The color scheme you choose can easily make or break a rice, So it is vitally important to pick a good looking one and build everything around it.
 
-This is largely a matter of personal preference of what / how many colors you choose but generally color schemes have 16 colors with or without foreground and background colors.
+The colours must match with each other and any shade should look good with any other from the same scheme no matter exactly how its used.
 
-Most terminals require 2 shades of white black red cyan magenta yellow blue & green (16 colors in total), One "dim" shade and one "bright" shade, but generally the bright shade just needs to be the same color and distinguishably different from the "dim" shade
+Your colour scheme can have as many colours as you desire but at minimum there must 8 colours and ideally you have 16 colours.
 
-I'd also suggest having colors (these can be the same) to represent focus and inactivity and various shades of background colors to visibly identify how high up a UI element is in the z space. (What is more in front of you and what is more behind)
+These 16 are split into 2 groups, "regulars" and "brights", If you have only 8 colours then your "brights" will be the same as your "regulars"
 
-There is also a theming shortcut called ["base16"](https://github.com/chriskempson/base16) which can greatly streamline the ricing process but brings with it its own drawbacks.
-<!-- WRITE MORE HERE -->
+#TABLE	Regular	Bright	Name
+		00		08		Black
+		01		09		Red
+		02		10		Green
+		03		11		Yellow
+		04		12		Blue
+		05		13		Magenta
+		06		14		Cyan
+		07		15		White		
+#END TABLE
+
+It's also important that your colour scheme work well for syntax highlighting (& be semantic) and be suitable for using in GUI environments.
+
+For an example, Here are some ones I really like:
+- https://github.com/savq/melange
+- https://github.com/sainnhe/gruvbox-material
+- https://github.com/rose-pine/rose-pine-theme
+- https://gitlab.com/snakedye/chocolate
 
 ### Wallpaper
 
@@ -44,11 +60,13 @@ After some time, looking at the plain black default background gets tiring so le
 
 Especially for minimalist window managers, it is common that they do not include wallpaper setter in which case an external application (usually `feh`) needs to be used.
 
-To illustrate: ![](https://media.discordapp.net/attachments/635625973764849684/998503072781320282/9_-_lmDxmn6.jpg?width=776&height=485) is an example of what I'd call a good wallpaper, it can easily with a color scheme like melange or gruvbox material and there is plenty of contrast to place any desktop widgets if I so choose, of course you have to like it too, its your desktop after all.
+To illustrate: 
+![](https://media.discordapp.net/attachments/635625973764849684/998503072781320282/9_-_lmDxmn6.jpg?width=776&height=485)
+ is an example of what I'd call a good wallpaper, it can easily with a color scheme like melange or gruvbox material and there is plenty of contrast to place any desktop widgets if I so choose, of course you have to like it too, its your desktop after all.
 
 ## Getting Comfortable
 
-So now we have the very start of a rice, We have chosen a colourscheme and we have a wallpaper to go with it, From here our rice can go whereever you want it to really.
+So now we have the very start of a rice, We have chosen a color scheme and we have a wallpaper to go with it, From here our rice can go wherever you want it to really.
 
 Since we are going to be editing all our configuration files from within our text editor, We should start with ricing that and becoming comfortable in it.
 
@@ -57,17 +75,17 @@ I'm writing this with neovim in mind but I'll try to make it as general as possi
 I'll just go through the steps to make your editor to fit in your rice and some extra steps you can take for beautification.
 
 When using neovim with the default colors, this is what we get, Nothing much to look at is it.
-![](/embed/editor0.png)
+![](../embed/editor0.png)
 
-Let's at least start by matching colours with our chosen colourscheme, Depending on whether you made your colourscheme yourself, there will probably already exist a theme made by some poor soul to fit. This becomes less likely on other editors. If you made a base16 theme this isn't really a concern as from how base16 themes work, one can be generated from just the set of colours.
+Let's at least start by matching colours with our chosen colour scheme, Depending on whether you made your colour scheme yourself, there will probably already exist a theme made by some poor soul to fit. This becomes less likely on other editors. If you made a base16 theme this isn't really a concern as from how base16 themes work, one can be generated from just the set of colours.
 
 #### Making a theme for VIM (VimScript)
-If such a theme doesnt exist, It isnt a big problem since Vim makes it fairly simple to create a theme.  
+If such a theme doesn't exist, It isn't a big problem since Vim makes it fairly simple to create a theme.  
 **Read** `:help highlight` & `:help colorscheme` & `:help coloring`  
-Basically every thing with colour in vim belongs to a *highlight group* that specifes things like foreground background & text style. The styles for every highlight group can be modified with the `highlight` command from vimscript
+Basically every thing with colour in vim belongs to a *highlight group* that specifies things like foreground background & text style. The styles for every highlight group can be modified with the `highlight` command from vimscript
 
-For an example, here is the port of the chocolate theme I made for vim:
-```viml
+For an example, here is a snippet of the port of the chocolate theme I made for vim:
+```vimscript
 " Typescript
 hi TSVariableBuiltin guifg=#d9b27c
 hi TSField guifg=#998396
@@ -85,10 +103,20 @@ hi EndOfBuffer guibg=bg guifg=bg
 hi StatusLineNC guibg=#302c2b gui=none cterm=none
 ```
 [[Full File]](https://github.com/undefinedDarkness/rice/blob/master/.config/nvim/colors/chocolate.vim)  
-If you spend time configuring extension appearances (Some are astoudingly bad at following default highlight groups) too it can take some time but the basic UI & syntax hl groups shouldn't take too long.
+If you spend time configuring extension appearances (Some are astoundingly bad at following default highlight groups) too it can take some time but the basic UI & syntax hl groups shouldn't take too long.
+
+### Terminal
+All terminals will allow you to customize the 16 colour palette that they use in accordance with what I documented before in the colour schemes section
+
+Each terminal is configured differently so consult the manual page for your own.
+If you're still using gnome-terminal or xfce-terminal or such and are wanting for more, see [this comparison](./terminal.html) I made
+
+Besides colours another thing worth customizing is the padding of the terminal window, I find around 16px to be a good amount, anything less than that is too little. This of course depends on your screen size but it makes sense for me on a 1600x900 laptop screen.
+
+The other thing you can do is change the terminal font, Most terminals default to using the `monospace` font alias (I think), But it's usually something like Liberation Mono which isn't much to look at, You can find some decent font choices in the [design](./design.html) document. Take note to install a nerd font variant if you can find one, it'll help solve some icon issues down the road.
 
 <center>
 
---- **🚧 This article is still undergoing contruction** ---
+--- **🚧 This article is still undergoing construction** ---
 
 </center>
