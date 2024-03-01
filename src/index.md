@@ -1,6 +1,21 @@
 # 🍱 Index
 
-
+```mermaid
+graph TD
+    A[Start]
+    A --> B[Theory]
+    A --> C[Practice]
+    B --> D[Design]
+    B --> E[Useful]
+    C --> F[FAQ]
+    C --> G[How to rice thing]
+    C --> H[Terminal]
+    click D "/ricing-guide/design.html"
+    click E "/ricing-guide/useful.html"
+    click F "/ricing-guide/faq.html"
+    click G "/ricing-guide/how-to-rice-thing.html"
+    click H "/ricing-guide/terminal.html"
+```
 
 ## Credits
 Most of the following are members of the r/unixporn discord server.

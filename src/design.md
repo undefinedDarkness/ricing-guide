@@ -34,26 +34,26 @@ Here are the fonts I personally like for each one:
 
 #### Mono space:
 <div class="horizontal showcase">
-![Roboto Mono](/assets/images/font-previews/Roboto-Mono-Regular.webp)
-![IBM Plex Mono](/assets/images/font-previews/IBM-Plex-Mono-Regular.webp)
-![JetBrains Mono](/assets/images/font-previews/JetBrains-Mono-Regular.webp)
-![Sarasa Term K](/assets/images/font-previews/Sarasa-Term-K.webp)
-[![Julia Mono](/assets/images/font-previews/JuliaMono-Regular.webp)](https://juliamono.netlify.app/)
+[![Roboto Mono](./embed/font-previews/Roboto-Mono-Regular.webp)](https://fonts.google.com/specimen/Roboto+Mono)
+[![IBM Plex Mono](./embed/font-previews/IBM-Plex-Mono-Regular.webp)](https://fonts.google.com/specimen/IBM+Plex+Mono)
+[![JetBrains Mono](./embed/font-previews/JetBrains-Mono-Regular.webp)](https://www.jetbrains.com/lp/mono/)
+[![Sarasa Term K](./embed/font-previews/Sarasa-Term-K.webp)](https://github.com/be5invis/Sarasa-Gothic)
+[![Julia Mono](./embed/font-previews/JuliaMono-Regular.webp)](https://juliamono.netlify.app/)
 </div>
 
 #### Serif:
 <div class="horizontal showcase">
-[![Redaction](/assets/images/font-previews/Redaction.webp)](https://www.redaction.us/)
-[![ET Bembo](/assets/images/font-previews/ETBembo-RomanLF.webp)](https://edwardtufte.github.io/et-book/)
-[![Piazzolla](/assets/images/font-previews/Piazzolla-Regular.webp)](https://fonts.google.com/specimen/Piazzolla)
+[![Redaction](./embed/font-previews/Redaction.webp)](https://www.redaction.us/)
+[![ET Bembo](./embed/font-previews/ETBembo-RomanLF.webp)](https://edwardtufte.github.io/et-book/)
+[![Piazzolla](./embed/font-previews/Piazzolla-Regular.webp)](https://fonts.google.com/specimen/Piazzolla)
 </div>
 
 #### Sans Serif:
 <div class="horizontal showcase">
-![Roboto](/assets/images/font-previews/Roboto.webp)
-![Ubuntu Sans](/assets/images/font-previews/Ubuntu-Regular.webp)
-![IBM Plex Sans](/assets/images/font-previews/IBM-Plex-Sans-Regular.webp)
-![Poppins](/assets/images/font-previews/Poppins-Regular.webp)
+[![Roboto](./embed/font-previews/Roboto.webp)](https://fonts.google.com/specimen/Roboto)
+[![Ubuntu Sans](./embed/font-previews/Ubuntu-Regular.webp)](https://fonts.google.com/specimen/Ubuntu)
+[![IBM Plex Sans](./embed/font-previews/IBM-Plex-Sans-Regular.webp)](https://www.ibm.com/plex/)
+[![Poppins](./embed/font-previews/Poppins-Regular.webp)](https://fonts.google.com/specimen/Poppins)
 </div>
 
 🏴‍☠️ [Repository of mostly monospace fonts](https://gitlab.com/exorcist365/fonts)
@@ -80,8 +80,8 @@ git sparse-checkout add src/glyphs
 #### Bitmap Fonts
 
 <div class="split">
-<img height="400" class='pxl' src="/assets/images/bitmap-eg.webp" title="Without AA" alt="Without AA" />
-<img height="400" class='pxl' src="/assets/images/aa-eg.webp" title="With AA" alt="With AA" />
+<img height="400" class='pxl' src="./embed/bitmap-eg.webp" title="Without AA" alt="Without AA" />
+<img height="400" class='pxl' src="./embed/aa-eg.webp" title="With AA" alt="With AA" />
 </div>
 
 [What are they?](http://www.cs.ucc.ie/~gavin/cs1050/the_internet/slides/ch07s01s01.html.htm)
@@ -109,7 +109,7 @@ Commonly used bitmap fonts:
 <div class='showcase horizontal'>
 
 [![Cozette](../embed/font-previews/CozetteVector.png)](https://github.com/slavfox/Cozette)
-[![Gohu-GohuFont](../embed/font-previews/GohuFont-Medium.png)](https://font.gohu.org/)
+<!-- [![Gohu-GohuFont](../embed/font-previews/GohuFont-Medium.png)](https://font.gohu.org/) -->
 [![Terminus](../embed/font-previews/Terminus.png)](https://terminus-font.sourceforge.net)	
 [![Unifont](../embed/font-previews/Unifont-Nerd-Font-Complete.png)](https://unifoundry.com/unifont/)
 [![Cherry](../embed/font-previews/cherry-11.png)](https://github.com/turquoise-hexagon/cherry)
@@ -139,7 +139,7 @@ Margin is spacing between the box and its siblings / parent box.
 MARGIN
 <div>
 PADDING
-<div>
+<div style="background-color: white; padding: 1em;">
 CONTENT
 </div>
 </div>

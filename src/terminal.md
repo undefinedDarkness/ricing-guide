@@ -2,28 +2,18 @@
 
 # Comparison of terminals
 
+#verbatim
 <table>
-
-
 <colgroup>
 <col  class="org-left">
-
 <col  class="org-left">
-
 <col  class="org-left">
-
 <col  class="org-left">
-
 <col  class="org-left">
-
 <col  class="org-left">
-
 <col  class="org-left">
-
 <col  class="org-left">
-
 <col  class="org-left">
-
 <col  class="org-left">
 </colgroup>
 <thead>
@@ -40,7 +30,6 @@
 <th scope="col" class="org-left">Rating</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td class="org-left">Wezterm</td>
@@ -54,8 +43,6 @@
 <td class="org-left">Lua</td>
 <td class="org-left">10/10</td>
 </tr>
-
-
 <tr>
 <td class="org-left">Alacritty</td>
 <td class="org-left">P</td>
@@ -68,8 +55,6 @@
 <td class="org-left">Yaml</td>
 <td class="org-left">5/10</td>
 </tr>
-
-
 <tr>
 <td class="org-left">Kitty</td>
 <td class="org-left">Y</td>
@@ -82,8 +67,6 @@
 <td class="org-left">Custom</td>
 <td class="org-left">8/10</td>
 </tr>
-
-
 <tr>
 <td class="org-left">Xterm</td>
 <td class="org-left">N</td>
@@ -96,8 +79,6 @@
 <td class="org-left">Xresources</td>
 <td class="org-left">7/10</td>
 </tr>
-
-
 <tr>
 <td class="org-left">St</td>
 <td class="org-left">P</td>
@@ -110,8 +91,6 @@
 <td class="org-left">C header</td>
 <td class="org-left">7/10</td>
 </tr>
-
-
 <tr>
 <td class="org-left">Foot</td>
 <td class="org-left">N</td>
@@ -124,8 +103,6 @@
 <td class="org-left">INI</td>
 <td class="org-left">7/10</td>
 </tr>
-
-
 <tr>
 <td class="org-left">Vte</td>
 <td class="org-left">N</td>
@@ -140,7 +117,7 @@
 </tr>
 </tbody>
 </table>
-
+#END verbatim
 **Notes:**   
 
 -   *Fallback* refers to the ability to fallback fonts, that is find a character in the next font in a list if it is not in the first one.
@@ -221,14 +198,11 @@ To change foreground color to bright:
 To change background color to bright:  
 `\033[4<N>;1m`  
 
-Where <N> is one of the following:  
+Where &lt;N&gt; is one of the following:  
 
 <table>
-
-
 <colgroup>
 <col  class="org-left">
-
 <col  class="org-right">
 </colgroup>
 <thead>
@@ -237,57 +211,41 @@ Where <N> is one of the following:
 <th scope="col" class="org-right">Number</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td class="org-left">Black</td>
 <td class="org-right">0</td>
 </tr>
-
-
 <tr>
 <td class="org-left">Red</td>
 <td class="org-right">1</td>
 </tr>
-
-
 <tr>
 <td class="org-left">Green</td>
 <td class="org-right">2</td>
 </tr>
-
-
 <tr>
 <td class="org-left">Yellow</td>
 <td class="org-right">3</td>
 </tr>
-
-
 <tr>
 <td class="org-left">Blue</td>
 <td class="org-right">4</td>
 </tr>
-
-
 <tr>
 <td class="org-left">Magenta</td>
 <td class="org-right">5</td>
 </tr>
-
-
 <tr>
 <td class="org-left">Cyan</td>
 <td class="org-right">6</td>
 </tr>
-
-
 <tr>
 <td class="org-left">White</td>
 <td class="org-right">7</td>
 </tr>
 </tbody>
 </table>
-
 
 ### Decorations
 
