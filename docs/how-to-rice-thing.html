@@ -11,25 +11,35 @@
 	<body>
 	  <article>
 
-<header>
+
+		<!-- HIGHLIGHTJS LOADING -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/monokai.min.css">
+		<script defer src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/highlight.min.js" onload="hljs.highlightAll();"></script>
+		<header>
 <h1>How do I rice THING?</h1>
 </header>
 <br/>
-<details open>
-<summary id="emacs">Emacs</summary>
-<p>
-The youtube channel <a href="https://www.youtube.com/c/systemcrafters">System Crafters</a> has already created a significant amount of resources regarding getting starting with emacs, <br/>
+
+<details>
+	<summary>
+		<h4>Emacs</h4>
+	</summary>
+	<p>
+		The youtube channel <a href="https://www.youtube.com/c/systemcrafters">System Crafters</a> has already created a significant amount of resources regarding getting starting with emacs, <br/>
 You can find them <a href="https://wiki.systemcrafters.cc/emacs/">here</a> - See the Emacs From Scratch series for an indepth series of writinig your own configuraton,<br/>
 But as usual, Do not follow them word for word, Experiment your own and try to understand what each and every setting does :D<br/>
 <br/>
 Customizing emacs is 90% about your own passion, There is a lot you can do<br/>
-</p>
+	</p>
 </details>
 <br/>
-<details open>
-<summary id="chromium">Chromium</summary>
-<p>
-Most chromium based browers do not support anything more than marginal theming,<br/>
+
+<details>
+	<summary>
+		<h4>Chromium</h4>
+	</summary>
+	<p>
+		Most chromium based browers do not support anything more than marginal theming,<br/>
 It is possible to affect a few changes by your gtk theme <a href="https://github.com/phocus/gtk/blob/master/scss/gtk-3.0/applications/_chromium.scss">[example</a>]<br/>
 <br/>
 You can also make your own Chromium theme tho again, these are quite limited in scope: <a href="https://developer.chrome.com/docs/extensions/mv3/themes/">https://developer.chrome.com/docs/extensions/mv3/themes/</a><br/>
@@ -37,13 +47,16 @@ You can also make your own Chromium theme tho again, these are quite limited in 
 Vivaldi however allows injecting CSS into the browser UI, I found a few links on it but your mileage may vary<br/>
 <a href="https://www.reddit.com/r/vivaldibrowser/comments/gso6bx/questions_about_css_customisations/">https://www.reddit.com/r/vivaldibrowser/comments/gso6bx/questions_about_css_customisations/</a><br/>
 <a href="https://forum.vivaldi.net/topic/10629/vivaldi-ui-customisations">https://forum.vivaldi.net/topic/10629/vivaldi-ui-customisations</a><br/>
-</p>
+	</p>
 </details>
 <br/>
-<details open>
-<summary id="firefox">Firefox</summary>
-<p>
-You can customize the User Interface (Chrome) with Firefox CSS, see the following:<br/>
+
+<details>
+	<summary>
+		<h4>Firefox</h4>
+	</summary>
+	<p>
+		You can customize the User Interface (Chrome) with Firefox CSS, see the following:<br/>
 <ul>
 <li><a href="https://www.reddit.com/r/FirefoxCSS/wiki/index/tutorials">Getting started guide</a><br/>
 </li>
@@ -57,15 +70,14 @@ You can customize the User Interface (Chrome) with Firefox CSS, see the followin
 Firefox also supports <code>userContent.css</code> for overriding the styles of a site, To use it simply follow the same instructions as for userChrome.css but create this file too in the same directory (chrome),<br/>
 The structure of the file is usually as follows:<br/>
 <pre>
-<code><span style="color:#48bac2; font-weight:bold">&#64;-moz-document</span> domain<span style="color:#181818">(</span><span style="color:#38781c">&quot;discord.com&quot;</span><span style="color:#181818">) {</span>
-	<span style="color:#898989; font-style:italic">/&ast; Your styles go here. &ast;/</span>
-<span style="color:#181818">}</span>
-</code>
+<code class="language-css">@-moz-document domain("discord.com") {
+	/&#42; Your styles go here. &#42;/
+}	</code>
 </pre>
 You can use any of the selectors available for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@document">@-moz-document</a><br/>
 <i>NOTE: Stylus can also export to this format for easy usage</i><br/>
 <br/>
-<h4 id="####-Start Page"> Start Page</h4>
+<h4 id="start-page">Start Page</h4>
 <p>
 You will need basic knowledge of HTML, CSS & JS.<br/>
 <a href="https://developer.mozilla.org/en-US/">MDN</a> is a nice place to learn.<br/>
@@ -74,13 +86,16 @@ Firefox has quite a few limitations on setting local files as your start page (n
 <br/>
 Then use <a href="https://addons.mozilla.org/en-US/firefox/addon/new-tab-override/">this extension</a> to set the URL.<br/>
 Chromium users can use <a href="https://chrome.google.com/webstore/detail/custom-new-tab-url/mmjbdbjnoablegbkcklggeknkfcjkjia">this</a> instead (Chrome places no limitations).<br/>
-</p>
+	</p>
 </details>
 <br/>
-<details open>
-<summary id="gtk">GTK</summary>
-<p>
-This is most easily accomplished by forking an existing theme and modifying them. Most themes are open source and<br/>
+
+<details>
+	<summary>
+		<h4>GTK</h4>
+	</summary>
+	<p>
+		This is most easily accomplished by forking an existing theme and modifying them. Most themes are open source and<br/>
 are easily modifiable (if you know CSS). Phocus is a nice one to start with since its code is clean scss and well structured, (<a href="https://github.com/phocus/gtk">https://github.com/phocus/gtk</a>)<br/>
 *NOTE: Phocus is not a GTK2 theme so it will not show up in <code>lxappearance</code>, Set your gtk theme using <a href="https://wiki.archlinux.org/title/GTK#Basic_theme_configuration">settings.ini</a> instead,<br/>
 this is because lxappearance expects a legacy gtk2 theme along with a gtk3, which modern themes do not have.*<br/>
@@ -90,7 +105,7 @@ GTK CSS reference: <a href="https://docs.gtk.org/gtk4/css-properties.html">https
 Using the GTK Debugger: <a href="https://elkowar.github.io/eww/working_with_gtk.html#gtk-debugger">https://elkowar.github.io/eww/working_with_gtk.html#gtk-debugger</a> (This should work anywhere)<br/>
 <br/>
 </p>
-<h4 id="####-Uniform Look for GTK & QT Apps"> Uniform Look for GTK & QT Apps</h4>
+<h4 id="uniform-look-for-gtk-qt-apps">Uniform Look for GTK & QT Apps</h4>
 <p>
 <br/>
 Arch Wiki Link: <a href="https://wiki.archlinux.org/title/Uniform_look_for_Qt_and_GTK_applications#Theme_engines">https://wiki.archlinux.org/title/Uniform_look_for_Qt_and_GTK_applications#Theme_engines</a><br/>
@@ -101,7 +116,7 @@ To achieve a consistent look over both the styles, you can install <b>theme engi
 These theme engines can be used to translate themes between GTK and QT platforms.<br/>
 <br/>
 </p>
-<h4 id="####-QGtkStyle"> QGtkStyle</h4>
+<h4 id="qgtkstyle">QGtkStyle</h4>
 <p>
 After installing, you have to make changes the following changes<br/>
 <br/>
@@ -109,9 +124,8 @@ After installing, you have to make changes the following changes<br/>
 <br/>
 ~/.config/Trolltech.conf<br/>
 <pre>
-<code><span style="color:#a94598; font-weight:bold">[Qt]</span>
-<span style="color:#48bac2; font-weight:bold">style</span><span style="color:#181818">=</span><span style="color:#9c5a02; font-weight:bold">GTK+</span>
-</code>
+<code class="language-ini">&lsqb;Qt&rsqb;
+style&equals;GTK+	</code>
 </pre>
 <br/>
 <b>For QT5:</b> set the environment variable <code>QT_QPA_PLATFORMTHEME=gtk2</code><br/>
@@ -119,17 +133,16 @@ After installing, you have to make changes the following changes<br/>
 <i>NOTE: This requires that the configured GTK theme supports both GTK 2 and GTK 3</i><br/>
 <br/>
 </p>
-<h4 id="####-QGnomePlatform"> QGnomePlatform</h4>
+<h4 id="qgnomeplatform">QGnomePlatform</h4>
 <p>
 This theme applies the appearance settings of GNOME for QT Applications. It is enabled by default on GNOME since version 3.20.<br/>
 To enable it on other systems, after installing the qgnomeplatform package, set the environment variable:<br/>
 <br/>
 <pre>
-<code>QT_QPA_PLATFORMTHEME<span style="color:#181818">=</span>gnome
-</code>
+<code class="language-sh">QT_QPA_PLATFORMTHEME&equals;gnome	</code>
 </pre>
 <br/>
-</p>
+	</p>
 </details>
 <br/>
 <!--#f Neovim / Vim
@@ -145,17 +158,16 @@ See more on <a href="/out/knowledge/vim.html">Vim & Neovim</a>.<br/>
 Vim has good documentation on what most of the highlight groups are for, avail yourself of it.<br/>
 <br/>
 </p>
-<h4 id="####-Get highlight group under cursor"> Get highlight group under cursor</h4>
+<h4 id="get-highlight-group-under-cursor">Get highlight group under cursor</h4>
 <p>
 Since i've been writing a port for <a href="https://gitlab.com/snakedye/chocolate">chocolate</a>, this is a problem i've encountered, the real basic solution is to do:<br/>
 <pre>
-<code>function<span style="color:#181818">!</span> SynStack<span style="color:#181818">()</span>
-  <span style="color:#a94598; font-weight:bold">if</span> <span style="color:#181818">!</span>exists<span style="color:#181818">(</span><span style="color:#c48218; font-weight:bold">&quot;&ast;synstack&quot;)</span>
+<code class="language-vim">function! SynStack()
+  if !exists("&#42;synstack")
     return
-  <span style="color:#a94598; font-weight:bold">endif</span>
-  echo map<span style="color:#181818">(</span><span style="color:#c48218; font-weight:bold">synstack(line(&apos;.&apos;), col(&apos;.&apos;)), &apos;synIDattr(v:val, &quot;name&quot;)&apos;)</span>
-endfunc
-</code>
+  endif
+  echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfunc	</code>
 </pre>
 <br/>
 but this doesnt work that well for treesitter, in which case using <a href="https://github.com/nvim-treesitter/playground/blob/master/lua/nvim-treesitter-playground/hl-info.lua">this code from treesitter-playground</a> works a fair bit better,<br/>
@@ -164,23 +176,29 @@ to use them more easily, create a keybinding for <code>SynStack()</code> or <cod
 #END f
 --><br/>
 <br/>
-<details open>
-<summary id="terminal">Terminal</summary>
-<p>
-Moved section to <a href="terminal.html">terminal</a><br/>
-</p>
+
+<details>
+	<summary>
+		<h4>Terminal</h4>
+	</summary>
+	<p>
+		Moved section to <a href="terminal.html">terminal</a><br/>
+	</p>
 </details>
 <br/>
-<details open>
-<summary id="picom">Picom</summary>
-<p>
-<i>The definition of compositor changes from X11 to Wayland, I am talking about X11 only:</i><br/>
+
+<details>
+	<summary>
+		<h4>Picom</h4>
+	</summary>
+	<p>
+		<i>The definition of compositor changes from X11 to Wayland, I am talking about X11 only:</i><br/>
 Compositor is a thing that sits between your window manager and X11 and makes stuff like transparency work. Recently, however, compositors have been used to implement blur, rounded corners and animations for a window manager to behave more like a desktop enviroment.<br/>
 <br/>
 If the version in your package repositories has the features you want, I'd suggest you use that instead.<br/>
 <br/>
 </p>
-<h4 id="####-I just want transparency and or shadow"> I just want transparency and or shadow</h4>
+<h4 id="i-just-want-transparency-and-or-shadow">I just want transparency and or shadow</h4>
 <p>
 You're in luck, lots of choice for you. You can use <code>picom</code> / <code>xcompmgr</code> / <code>compton</code>, anything you want and generally it'll just work™<br/>
 <br/>
@@ -189,21 +207,21 @@ most commonly used & most supported one.<br/>
 ⛔ <i>Forcing application transparency has very little purpose in most cases however, and most user interface's are not designed with that in mind (eg: nvim)</i> <br/>
 <br/>
 </p>
-<h4 id="####-I want blur too"> I want blur too</h4>
+<h4 id="i-want-blur-too">I want blur too</h4>
 <p>
 Just build the latest <a href="https://github.com/yshui/picom">master</a> and use picom with the --experimental-backends option.<br/>
 To build picom from source, follow the instructions in the <a href="https://github.com/yshui/picom#build">README</a><br/>
 ⛔ <i>Be very caution when using blur, excessive blur can make a rice look bad very easily.</i> <br/>
 <br/>
 </p>
-<h4 id="####-I want rounded corners too"> I want rounded corners too</h4>
+<h4 id="i-want-rounded-corners-too">I want rounded corners too</h4>
 <p>
 Again, picom master has the thing for you, picom has implemented rounder corners in the xrender and legacy glx backends.<br/>
 <br/>
 A few window managers can draw rounded corners out of the box, so you might be able to utilize that. (afaik awesome can)<br/>
 <br/>
 </p>
-<h4 id="####-I want animations too"> I want animations too</h4>
+<h4 id="i-want-animations-too">I want animations too</h4>
 <p>
 Use one of the popular forks I guess :/, I don't know how well picom animations work, but I don't expect it to be spectacular.<br/>
 The following are popular as of October 2021:<br/>
@@ -214,30 +232,28 @@ The following are popular as of October 2021:<br/>
 <br/>
 snippet to configure animations on dccsillag or pijulius<br/>
 <pre>
-<code><span style="color:#898989; font-style:italic"># Animations</span>
-<span style="color:#a94598; font-weight:bold">animations</span> = true<span style="color:#181818">;</span>
-<span style="color:#a94598; font-weight:bold">animation</span>-stiffness = <span style="color:#48bac2; font-weight:bold">300.0</span><span style="color:#181818">;</span>
-<span style="color:#a94598; font-weight:bold">animation</span>-dampening = <span style="color:#48bac2; font-weight:bold">22.0</span><span style="color:#181818">;</span>
-<span style="color:#a94598; font-weight:bold">animation</span>-clamping = true<span style="color:#181818">;</span>
-<span style="color:#a94598; font-weight:bold">animation</span>-mass = <span style="color:#48bac2; font-weight:bold">1</span><span style="color:#181818">;</span>
-<span style="color:#a94598; font-weight:bold">animation</span>-for-open-window = <span style="color:#38781c">&quot;zoom&quot;</span><span style="color:#181818">;</span>
-<span style="color:#a94598; font-weight:bold">animation</span>-for-menu-window = <span style="color:#38781c">&quot;slide-down&quot;</span><span style="color:#181818">;</span>
-<span style="color:#a94598; font-weight:bold">animation</span>-for-transient-window = <span style="color:#38781c">&quot;slide-down&quot;</span><span style="color:#181818">;</span>
-<span style="color:#898989; font-style:italic"># (requires pijulius)</span>
-<span style="color:#a94598; font-weight:bold">animation</span>-for-workspace-switch-in = <span style="color:#38781c">&quot;zoom&quot;</span><span style="color:#181818">;</span>
-<span style="color:#a94598; font-weight:bold">animation</span>-for-workspace-switch-out = <span style="color:#38781c">&quot;zoom&quot;</span><span style="color:#181818">;</span>
-</code>
+<code class="language-conf">&#35; Animations
+animations &equals; true;
+animation-stiffness &equals; 300.0;
+animation-dampening &equals; 22.0;
+animation-clamping &equals; true;
+animation-mass &equals; 1;
+animation-for-open-window &equals; "zoom";
+animation-for-menu-window &equals; "slide-down";
+animation-for-transient-window &equals; "slide-down";
+&#35; (requires pijulius)
+animation-for-workspace-switch-in &equals; "zoom";
+animation-for-workspace-switch-out &equals; "zoom";	</code>
 </pre>
 <br/>
 snippet to configure animations on jonaburg<br/>
 <pre>
-<code><span style="color:#a94598; font-weight:bold">transition</span>-length = <span style="color:#48bac2; font-weight:bold">300</span>
-<span style="color:#a94598; font-weight:bold">transition</span>-pow-x = <span style="color:#48bac2; font-weight:bold">0.1</span>
-<span style="color:#a94598; font-weight:bold">transition</span>-pow-y = <span style="color:#48bac2; font-weight:bold">0.1</span>
-<span style="color:#a94598; font-weight:bold">transition</span>-pow-w = <span style="color:#48bac2; font-weight:bold">0.1</span>
-<span style="color:#a94598; font-weight:bold">transition</span>-pow-h = <span style="color:#48bac2; font-weight:bold">0.1</span>
-<span style="color:#a94598; font-weight:bold">size</span>-transition = true
-</code>
+<code class="language-conf">transition-length &equals; 300
+transition-pow-x &equals; 0.1
+transition-pow-y &equals; 0.1
+transition-pow-w &equals; 0.1
+transition-pow-h &equals; 0.1
+size-transition &equals; true	</code>
 </pre>
 <br/>
 Example configuration with most of the available options: <a href="https://github.com/yshui/picom/blob/next/picom.sample.conf">https://github.com/yshui/picom/blob/next/picom.sample.conf</a><br/>
@@ -249,13 +265,16 @@ For <code>Application.Navigator</code>, You would put <code>class_g = 'Navigator
 <a href="https://nuxsh.is-a.dev/blog/picom.html">Nuxsh's Page About Picom Forks</a><br/>
 <a href="https://wiki.archlinux.org/title/Picom">Arch Wiki Page</a><br/>
 <br/>
-</p>
+	</p>
 </details>
 <br/>
-<details open>
-<summary id="wallpapers">Wallpapers</summary>
-<p>
-<br/>
+
+<details>
+	<summary>
+		<h4>Wallpapers</h4>
+	</summary>
+	<p>
+		<br/>
 Good places to look for wallpapers are:<br/>
 <ul>
 <li><a href="https://images.google.com/">https://images.google.com/</a><br/>
@@ -301,7 +320,7 @@ I like <a href="https://boards.4chan.org/wg/">the /wg/ board too</a> but that on
 Really depends on what you're doing and looking for tho..<br/>
 <br/>
 </p>
-<h4 id="####-Animated Wallpapers"> Animated Wallpapers</h4>
+<h4 id="animated-wallpapers">Animated Wallpapers</h4>
 <p>
 For those who don't know how to set animated walls, here's a command for it (you will need xwinwrap and mpv for video files or gifview for gif files):<br/>
 <br/>
@@ -317,18 +336,18 @@ Sources for pixelart animated wallpapers<br/>
 Googling will also get you a bit of resources .<br/>
 <br/>
 </p>
-<h4 id="####-Tiled Wallpapers"> Tiled Wallpapers</h4>
+<h4 id="tiled-wallpapers">Tiled Wallpapers</h4>
 <p>
 These are wallpapers that tiled like tiles in a pattern, <a href="/assets/images/dump/e038c16d-6663-40b9-8b21-82ad64927848.webp">example</a> repeated over your entire screen.<br/>
 Their usage is fairly simple:<br/>
 <code>feh --bg-tile |path-to-wallpaper|</code> or if you have a bitmap you can use <code>xsetroot -bitmap |path-to-bitmap-wallpaper|</code>, or manually tile it in your image editor of choice.<br/>
 <br/>
 You can find a bunch of sources here: <a href="https://notes.neeasade.net/tiled-wallpaper-sources.html">https://notes.neeasade.net/tiled-wallpaper-sources.html</a>, Their site has a bunch of cool ricing related stuff too.<br/>
-</p>
+	</p>
 </details>
 <br/>
 </p>
-<h3 id="###-"> </h3>
+<h3 id=""></h3>
 <p>
 			<footer>
 				<a href="/out/index.html">Return To Index</a>

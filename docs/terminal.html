@@ -11,37 +11,130 @@
 	<body>
 	  <article>
 
-<br/>
+
+		<!-- HIGHLIGHTJS LOADING -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/monokai.min.css">
+		<script defer src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/highlight.min.js" onload="hljs.highlightAll();"></script>
+		<br/>
 <br/>
 <header>
 <h1>Comparison of terminals</h1>
 </header>
 <br/>
-<table><br/>
-<br/>
-<colgroup><col  class="org-left"><br/>
-<col  class="org-left"><br/>
-<col  class="org-left"><br/>
-<col  class="org-left"><br/>
-<col  class="org-left"><br/>
-<col  class="org-left"><br/>
-<col  class="org-left"><br/>
-<col  class="org-left"><br/>
-<col  class="org-left"><br/>
-<col  class="org-left"></colgroup><thead><tr><th scope="col" class="org-left">Name</th><th scope="col" class="org-left">Ligatures</th><th scope="col" class="org-left">Fallback</th><th scope="col" class="org-left">Advanced</th><th scope="col" class="org-left">Bitmaps</th><th scope="col" class="org-left">Wayland</th><th scope="col" class="org-left">Tabs</th><th scope="col" class="org-left">Images</th><th scope="col" class="org-left">Config</th><th scope="col" class="org-left">Rating</th></tr></thead><br/>
-<tbody><tr><td class="org-left">Wezterm</td><td class="org-left">Y</td><td class="org-left">Y</td><td class="org-left">Y</td><td class="org-left">Y</td><td class="org-left">Y</td><td class="org-left">Y</td><td class="org-left">Y</td><td class="org-left">Lua</td><td class="org-left">10/10</td></tr><br/>
-<br/>
-<tr><td class="org-left">Alacritty</td><td class="org-left">P</td><td class="org-left">N</td><td class="org-left">N</td><td class="org-left">Y</td><td class="org-left">Y</td><td class="org-left">N</td><td class="org-left">N</td><td class="org-left">Yaml</td><td class="org-left">5/10</td></tr><br/>
-<br/>
-<tr><td class="org-left">Kitty</td><td class="org-left">Y</td><td class="org-left">N</td><td class="org-left">Y</td><td class="org-left">N</td><td class="org-left">Y</td><td class="org-left">Y</td><td class="org-left">Y</td><td class="org-left">Custom</td><td class="org-left">8/10</td></tr><br/>
-<br/>
-<tr><td class="org-left">Xterm</td><td class="org-left">N</td><td class="org-left">N</td><td class="org-left">N</td><td class="org-left">Y</td><td class="org-left">N</td><td class="org-left">N</td><td class="org-left">Y</td><td class="org-left">Xresources</td><td class="org-left">7/10</td></tr><br/>
-<br/>
-<tr><td class="org-left">St</td><td class="org-left">P</td><td class="org-left">P</td><td class="org-left">N</td><td class="org-left">Y</td><td class="org-left">N</td><td class="org-left">N</td><td class="org-left">P</td><td class="org-left">C header</td><td class="org-left">7/10</td></tr><br/>
-<br/>
-<tr><td class="org-left">Foot</td><td class="org-left">N</td><td class="org-left">Y</td><td class="org-left">N</td><td class="org-left">Y</td><td class="org-left">Y</td><td class="org-left">N</td><td class="org-left">Y</td><td class="org-left">INI</td><td class="org-left">7/10</td></tr><br/>
-<br/>
-<tr><td class="org-left">Vte</td><td class="org-left">N</td><td class="org-left">N</td><td class="org-left">N</td><td class="org-left">N</td><td class="org-left">N</td><td class="org-left">N</td><td class="org-left">P</td><td class="org-left">GUI</td><td class="org-left">5/10</td></tr></tbody></table><br/>
+<table>
+<colgroup>
+<col  class="org-left">
+<col  class="org-left">
+<col  class="org-left">
+<col  class="org-left">
+<col  class="org-left">
+<col  class="org-left">
+<col  class="org-left">
+<col  class="org-left">
+<col  class="org-left">
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Name</th>
+<th scope="col" class="org-left">Ligatures</th>
+<th scope="col" class="org-left">Fallback</th>
+<th scope="col" class="org-left">Advanced</th>
+<th scope="col" class="org-left">Bitmaps</th>
+<th scope="col" class="org-left">Wayland</th>
+<th scope="col" class="org-left">Tabs</th>
+<th scope="col" class="org-left">Images</th>
+<th scope="col" class="org-left">Config</th>
+<th scope="col" class="org-left">Rating</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Wezterm</td>
+<td class="org-left">Y</td>
+<td class="org-left">Y</td>
+<td class="org-left">Y</td>
+<td class="org-left">Y</td>
+<td class="org-left">Y</td>
+<td class="org-left">Y</td>
+<td class="org-left">Y</td>
+<td class="org-left">Lua</td>
+<td class="org-left">10/10</td>
+</tr>
+<tr>
+<td class="org-left">Alacritty</td>
+<td class="org-left">P</td>
+<td class="org-left">N</td>
+<td class="org-left">N</td>
+<td class="org-left">Y</td>
+<td class="org-left">Y</td>
+<td class="org-left">N</td>
+<td class="org-left">N</td>
+<td class="org-left">Yaml</td>
+<td class="org-left">5/10</td>
+</tr>
+<tr>
+<td class="org-left">Kitty</td>
+<td class="org-left">Y</td>
+<td class="org-left">N</td>
+<td class="org-left">Y</td>
+<td class="org-left">N</td>
+<td class="org-left">Y</td>
+<td class="org-left">Y</td>
+<td class="org-left">Y</td>
+<td class="org-left">Custom</td>
+<td class="org-left">8/10</td>
+</tr>
+<tr>
+<td class="org-left">Xterm</td>
+<td class="org-left">N</td>
+<td class="org-left">N</td>
+<td class="org-left">N</td>
+<td class="org-left">Y</td>
+<td class="org-left">N</td>
+<td class="org-left">N</td>
+<td class="org-left">Y</td>
+<td class="org-left">Xresources</td>
+<td class="org-left">7/10</td>
+</tr>
+<tr>
+<td class="org-left">St</td>
+<td class="org-left">P</td>
+<td class="org-left">P</td>
+<td class="org-left">N</td>
+<td class="org-left">Y</td>
+<td class="org-left">N</td>
+<td class="org-left">N</td>
+<td class="org-left">P</td>
+<td class="org-left">C header</td>
+<td class="org-left">7/10</td>
+</tr>
+<tr>
+<td class="org-left">Foot</td>
+<td class="org-left">N</td>
+<td class="org-left">Y</td>
+<td class="org-left">N</td>
+<td class="org-left">Y</td>
+<td class="org-left">Y</td>
+<td class="org-left">N</td>
+<td class="org-left">Y</td>
+<td class="org-left">INI</td>
+<td class="org-left">7/10</td>
+</tr>
+<tr>
+<td class="org-left">Vte</td>
+<td class="org-left">N</td>
+<td class="org-left">N</td>
+<td class="org-left">N</td>
+<td class="org-left">N</td>
+<td class="org-left">N</td>
+<td class="org-left">N</td>
+<td class="org-left">P</td>
+<td class="org-left">GUI</td>
+<td class="org-left">5/10</td>
+</tr>
+</tbody>
+</table>
 <b>Notes:</b>   <br/>
 <br/>
 <ul>
@@ -108,13 +201,13 @@ Example prompt (this is gentoo's default one):  <br/>
 <code>PS1='\[\033[01;31m\]\h\[\033[01;34m\] \W \$\[\033[00m\] '</code>  <br/>
 <br/>
 <br/>
-<h2 id="##-Terminal Color Codes & Decorations"> Terminal Color Codes & Decorations</h2>
+<h2 id="terminal-color-codes-decorations">Terminal Color Codes & Decorations</h2>
 <p>
 <br/>
 Terminals generally support a couple or more of 3 color modes, they are:  <br/>
 <br/>
 <ul>
-<li>  True Color (Full RGB Color)<br/>
+<li>  24 Bit Colour True Color (Full RGB Color)<br/>
 </li>
 <li>  256 Color<br/>
 </li>
@@ -135,30 +228,57 @@ To change foreground color to bright:  <br/>
 To change background color to bright:  <br/>
 <code>\033[4&lt;N&gt;;1m</code>  <br/>
 <br/>
-Where <N> is one of the following:  <br/>
+Where &lt;N&gt; is one of the following:  <br/>
 <br/>
-<table><br/>
-<br/>
-<colgroup><col  class="org-left"><br/>
-<col  class="org-right"></colgroup><thead><tr><th scope="col" class="org-left">Color</th><th scope="col" class="org-right">Number</th></tr></thead><br/>
-<tbody><tr><td class="org-left">Black</td><td class="org-right">0</td></tr><br/>
-<br/>
-<tr><td class="org-left">Red</td><td class="org-right">1</td></tr><br/>
-<br/>
-<tr><td class="org-left">Green</td><td class="org-right">2</td></tr><br/>
-<br/>
-<tr><td class="org-left">Yellow</td><td class="org-right">3</td></tr><br/>
-<br/>
-<tr><td class="org-left">Blue</td><td class="org-right">4</td></tr><br/>
-<br/>
-<tr><td class="org-left">Magenta</td><td class="org-right">5</td></tr><br/>
-<br/>
-<tr><td class="org-left">Cyan</td><td class="org-right">6</td></tr><br/>
-<br/>
-<tr><td class="org-left">White</td><td class="org-right">7</td></tr></tbody></table><br/>
+<table>
+<colgroup>
+<col  class="org-left">
+<col  class="org-right">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Color</th>
+<th scope="col" class="org-right">Number</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Black</td>
+<td class="org-right">0</td>
+</tr>
+<tr>
+<td class="org-left">Red</td>
+<td class="org-right">1</td>
+</tr>
+<tr>
+<td class="org-left">Green</td>
+<td class="org-right">2</td>
+</tr>
+<tr>
+<td class="org-left">Yellow</td>
+<td class="org-right">3</td>
+</tr>
+<tr>
+<td class="org-left">Blue</td>
+<td class="org-right">4</td>
+</tr>
+<tr>
+<td class="org-left">Magenta</td>
+<td class="org-right">5</td>
+</tr>
+<tr>
+<td class="org-left">Cyan</td>
+<td class="org-right">6</td>
+</tr>
+<tr>
+<td class="org-left">White</td>
+<td class="org-right">7</td>
+</tr>
+</tbody>
+</table>
 <br/>
 </p>
-<h3 id="###-Decorations"> Decorations</h3>
+<h3 id="decorations">Decorations</h3>
 <p>
 <br/>
 <ul>
@@ -169,8 +289,6 @@ Where <N> is one of the following:  <br/>
 <li>  Underline <code>\033[4m</code><br/>
 </li>
 <li>  Reversed <code>\033[7m</code><br/>
-</li>
-</ul><br/>
 			<footer>
 				<a href="/out/index.html">Return To Index</a>
 			</footer>

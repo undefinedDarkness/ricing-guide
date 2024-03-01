@@ -11,13 +11,18 @@
 	<body>
 	  <article>
 
-<header>
+
+		<!-- MERMAID LOADING -->
+		<script defer src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js" onload="mermaid.initialize({startOnLoad:true})"></script>
+		<script>document.addEventListener("DOMContentLoaded", () => mermaid.initialize({startOnLoad:true}))</script>
+		<!-- HIGHLIGHTJS LOADING -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/monokai.min.css">
+		<script defer src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/highlight.min.js" onload="hljs.highlightAll();"></script>
+		<header>
 <h1>🍱 Index</h1>
 </header>
 <br/>
-<div class="block-center">
-<div class="mermaid">
-graph TD
+<div class="mermaid">graph TD
     A[Start]
     A --> B[Theory]
     A --> C[Practice]
@@ -31,11 +36,8 @@ graph TD
     click F "/ricing-guide/faq.html"
     click G "/ricing-guide/how-to-rice-thing.html"
     click H "/ricing-guide/terminal.html"
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/mermaid@8.14.0/dist/mermaid.min.js"></script>
-</div>
-<br/>
-<h2 id="##-Credits"> Credits</h2>
+</div><br/>
+<h2 id="credits">Credits</h2>
 <p>
 Most of the following are members of the r/unixporn discord server.<br/>
 <br/>
