@@ -10,11 +10,11 @@ graph TD
     C --> F[FAQ]
     C --> G[How to rice thing]
     C --> H[Terminal]
-    click D "/ricing-guide/design.html"
-    click E "/ricing-guide/useful.html"
-    click F "/ricing-guide/faq.html"
-    click G "/ricing-guide/how-to-rice-thing.html"
-    click H "/ricing-guide/terminal.html"
+    click D "./out/design.html"
+    click E "./out/useful.html"
+    click F "./out/faq.html"
+    click G "./out/how-to-rice-thing.html"
+    click H "./out/terminal.html"
 ```
 
 ## Credits

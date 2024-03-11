@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap');
+
+
+:root {
+	--article-size: 1em
+}
+
+article {
+	font-size: var(--article-size);
+}
+
+body {
+	font-size: 1.4em;
+}
+
+body {
+	font-family: "Inter";
+}
+
+i {
+	font-style: oblique 15deg;
+}
+
+kbd, pre, code {
+	font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
+	font-size: calc(0.9 * var(--article-size));
+}
+
+summary{font-size: larger;}
+figcaption,var,span.special{font-style: italic}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: "Shantell Sans";
+}
+
+h4,h5,h6 {
+	font-weight: normal;
+	margin: 0;
+}
+h1,h2,h3 {
+	font-weight: normal;
+	font-variation-settings: 'wght' 700;
+}
+
+h1 {
+	margin-bottom: 0.4em;
+    font-size: calc(2.1 * var(--article-size));
+}
+
+
+h2 {
+	margin-bottom: 0.3em;
+	font-size: calc(2 * var(--article-size));
+}
+
+h3 {
+	font-size: calc(1.5 * var(--article-size));
+}
+
+h4 {
+	font-size: calc(1.3 * var(--article-size));
+}
+
+h5 {
+    font-size: calc(1.2 * var(--article-size));
+}
+h6 {
+    font-size: calc(1.1 * var(--article-size));
+}
