@@ -10,3 +10,7 @@ If you need any help, feel free to contact me on Discord @ dark_nes., You will a
 ### Linking
 Links from `./src/index.md` must be prefixed with `./out/` since `index.html` is not located in the `./out/` directory but everything else is,
 Other links should be preferably relative instead of absolution (start with `./` or `../` instead of `/`)
+
+# TODO
+- [ ] Phase out custom markdown syntax so that can be viewed from GH
+
