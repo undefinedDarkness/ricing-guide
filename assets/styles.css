@@ -107,6 +107,10 @@ pre {
     border-radius: 5px;
 }
 
+.whitespace-pre {
+    white-space: pre-line;
+}
+
 pre>code {
     white-space: pre;
 }
