@@ -132,6 +132,8 @@ Compositor is a thing that sits between your window manager and X11 and makes st
 
 If the version in your package repositories has the features you want, I'd suggest you use that instead.
 
+===This is out of date, Picom master now includes many of these features, It is recommended to reference it's documentation===
+
 #### I just want transparency and or shadow
 You're in luck, lots of choice for you. You can use `picom` / `xcompmgr` / `compton`, anything you want and generally it'll just work™
 
