@@ -10,11 +10,13 @@ graph TD
     C --> F[FAQ]
     C --> G[How to rice thing]
     C --> H[Terminal]
+    C --> I[An example ricing journey]
     click D "./out/design.html"
     click E "./out/useful.html"
     click F "./out/faq.html"
     click G "./out/how-to-rice-thing.html"
     click H "./out/terminal.html"
+    click I "./out/where-to-start.html"
 ```
 
 ## Credits
