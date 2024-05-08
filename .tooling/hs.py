@@ -3,7 +3,10 @@ from mimetypes import guess_type as guess_mime_type
 from pathlib import Path
 from watchfiles import awatch
 import asyncio
+import magic
 import io
+
+prefix="\033[41m  🔥  \033[0m  " 
 
 # A terribly simple little hot server
 
@@ -59,7 +62,7 @@ async def generichandle(req):
     content = fp.read()
     fp.close()
 
-    mimetype = guess_mime_type(path)[0] or "text/plain"
+    mimetype = guess_mime_type(str(path))[0] or "text/plain"
 
     return web.Response(body=content, content_type=mimetype)
 
@@ -74,7 +77,7 @@ async def wshandle(req):
             words = msg.data.split(" ")
             if words[0] == "REGISTER":
                 sockets.append((words[1], ws))
-                print("HS: Registered %s" % words[1])
+                print(prefix + "Registered %s" % words[1])
         else:
             print("Unexpected WS message of type:", msg.type)
 
@@ -91,10 +94,12 @@ app.add_routes([
 
 async def watch():
     # paths = list(Path('./out').glob('**/*.html'))
-    async for changes in awatch("out"):
+    # print(paths)
+    async for changes in awatch('./out'):
         for change in changes:
             fp = Path(change[1])
             fn = fp.name
+            print(prefix + f" Updating {fn}")
             # print("Updating all listening for %s" % fn)
             applicable = [conn for conn in sockets if conn[0] == fn] 
             for socket in applicable:
@@ -107,7 +112,7 @@ async def main():
     await runner.setup()
     site = web.TCPSite(runner, "localhost", 5000)
     await site.start()
-    print("HS: Server Started @ \u001b[31mlocalhost:5000\u001b[0m")
+    print(prefix + "Server Started @ \u001b[31mlocalhost:5000\u001b[0m")
 
     # Initialize File Watcher
     await watch()

@@ -11,11 +11,7 @@
 	<body>
 	  <article>
 
-
-		<!-- HIGHLIGHTJS LOADING -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/monokai.min.css">
-		<script defer src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/highlight.min.js" onload="hljs.highlightAll();"></script>
-		<style>
+<style>
 	.floating-demo {
 		display: inline-flex; 
 		box-shadow: 20px 10px 0;
@@ -28,42 +24,21 @@
 		border: 1px solid;
 	}
 </style>
-<header>
 <h1>An Introduction to Window Managers</h1>
-</header>
-Generally when creating a rice, we want the most control and customizability at our fingertips.<br/>
-<br/>
-Desktop Environments while perfectly usable for most purposes, make extensive customization more troublesome than necessary. To avoid this trouble we have a bare bones window manager which does not undertake any more responsibility than managing your windows (some do more than this but its not important right now). We're now given the responsibility of making our desktop perfectly suited to our needs exactly like how we want it.<br/>
-<br/>
-For starting out, I'd recommend one of i3, bspwm and openbox to begin with, they have a lot of community support and openbox in particular should be familiar in function to most, while i3 serves as a nice introduction to tiling window managers in general.<br/>
-<br/>
-<header>
+<p>Generally when creating a rice, we want the most control and customizability at our fingertips.</p>
+<p>Desktop Environments while perfectly usable for most purposes, make extensive customization more troublesome than necessary. To avoid this trouble we have a bare bones window manager which does not undertake any more responsibility than managing your windows (some do more than this but its not important right now). We’re now given the responsibility of making our desktop perfectly suited to our needs exactly like how we want it.</p>
+<p>For starting out, I’d recommend one of i3, bspwm and openbox to begin with, they have a lot of community support and openbox in particular should be familiar in function to most, while i3 serves as a nice introduction to tiling window managers in general.</p>
 <h1>Getting used to a Window Manager</h1>
-</header>
-<br/>
-<h2 id="mode">Mode</h2>
-<p>
-<br/>
-Window managers are largely divided into 2 varieties based on how they function, There are <i>stacking</i> window managers and <i>tiling</i> window managers<br/>
-<br/>
-</p>
-<h3 id="stacking-floating">Stacking / Floating</h3>
-<p>
-<br/>
+<h2>Mode</h2>
+<p>Window managers are largely divided into 2 varieties based on how they function, There are <em>stacking</em> window managers and <em>tiling</em> window managers</p>
+<h3>Stacking / Floating</h3>
 <div class="floating-demo">
 	I am a window and I can be moved and resized freely
 </div>
-<br/>
-These work exactly like you'd expect in MacOS or Windows where windows can be freely moved and resized, Even moved outside the screen edges.<br/>
-<br/>
-Usually windows are accompanied with titlebars with a window title or action buttons.<br/>
-<br/>
-I won't go into much detail about these since if you've used a computer before, You're familiar with how they work.<br/>
-<br/>
-</p>
-<h3 id="tiling">Tiling</h3>
-<p>
-<br/>
+<p>These work exactly like you’d expect in MacOS or Windows where windows can be freely moved and resized, Even moved outside the screen edges.</p>
+<p>Usually windows are accompanied with titlebars with a window title or action buttons.</p>
+<p>I won’t go into much detail about these since if you’ve used a computer before, You’re familiar with how they work.</p>
+<h3>Tiling</h3>
 <table class="tiling-demo">
 <tr>
 	<td rowspan="2">
@@ -77,34 +52,25 @@ I won't go into much detail about these since if you've used a computer before, 
 	<td>Child 2</td>
 </tr>
 </table>
-<br/>
-Above is just an example of how windows are placed in tiling window layout.<br/>
-<br/>
-When they're tiled, windows have no control of how much size they occupy, and they cannot be freely be moved, their position is dictated by the layout.<br/>
-<br/>
-This manner may seem restrictive at first but not having to spend time figuring out window positions manually and moving windows like a wizard with keybinds helps greatly with productivity.<br/>
-<br/>
-By manner of how it works, Complex rules can be setup for the position of a window so it can be fine tweaked to a great extent.<br/>
-<br/>
-There are many dozens of different tiling layouts with each window manager usually only using a few.<br/>
-<br/>
-<b>Read the documentation for your chosen wm and see if you can understand it.</b><br/>
-<br/>
-There are many tiling window managers but I'd recommend i3 to start with.<br/>
-<br/>
-Consult this if you'd like more choice: <a href="https://wiki.archlinux.org/title/Comparison_of_tiling_window_managers">https://wiki.archlinux.org/title/Comparison_of_tiling_window_managers</a><br/>
-<br/>
-</p>
-<h2 id="usage">Usage</h2>
-<p>
-All WM's are designed especially to be used entirely from the keyboard. They can also use mouse controls but this mostly applies to floating window managers.<br/>
-<br/>
-They all have their own default keybinds so it'll depend on which one you choose.<br/>
-<br/>
+<p>Above is just an example of how windows are placed in tiling window layout.</p>
+<p>When they’re tiled, windows have no control of how much size they occupy, and they cannot be freely be moved, their position is dictated by the layout.</p>
+<p>This manner may seem restrictive at first but not having to spend time figuring out window positions manually and moving windows like a wizard with keybinds helps greatly with productivity.</p>
+<p>By manner of how it works, Complex rules can be setup for the position of a window so it can be fine tweaked to a great extent.</p>
+<p>There are many dozens of different tiling layouts with each window manager usually only using a few.</p>
+<p><strong>Read the documentation for your chosen wm and see if you can understand it.</strong></p>
+<p>There are many tiling window managers but I’d recommend i3 to start with.</p>
+<p>Consult this if you’d like more choice: https://wiki.archlinux.org/title/Comparison_of_tiling_window_managers</p>
+<h2>Usage</h2>
+<p>All WM’s are designed especially to be used entirely from the keyboard. They can also use mouse controls but this mostly applies to floating window managers.</p>
+<p>They all have their own default keybinds so it’ll depend on which one you choose.</p>
+<p>There isnt really any good way to get used to this, It only comes with practice.</p>
 			<footer>
 				<a href="../index.html">Return To Index</a>
 			</footer>
 	  </article>
-      <script src="/assets/ipage.js" defer></script>
+	  <script type="module">
+		import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+		mermaid.initialize({ startOnLoad: true });
+	  </script>
 	</body>
 </html>

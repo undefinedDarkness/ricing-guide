@@ -11,16 +11,8 @@
 	<body>
 	  <article>
 
-
-		<!-- HIGHLIGHTJS LOADING -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/monokai.min.css">
-		<script defer src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/highlight.min.js" onload="hljs.highlightAll();"></script>
-		<br/>
-<br/>
-<header>
 <h1>Comparison of terminals</h1>
-</header>
-<br/>
+<p>#verbatim</p>
 <table>
 <colgroup>
 <col  class="org-left">
@@ -135,101 +127,66 @@
 </tr>
 </tbody>
 </table>
-<b>Notes:</b>   <br/>
-<br/>
+#END verbatim
+**Notes:**   
 <ul>
-<li>  <i>Fallback</i> refers to the ability to fallback fonts, that is find a character in the next font in a list if it is not in the first one.<br/>
-</li>
-<li>  <i>Advanced</i> refers to the capability of advanced open type features, primarily stylistic sets<br/>
-</li>
-<li>  The foot terminal is wayland exclusive<br/>
-</li>
-<li>  If you're thinking about using st, I highly suggest you use <a href="https://github.com/bakkeby/st-flexipatch">st-flexipatch</a> right from the start, It will save you a lot of time<br/>
-</li>
-<li>  VTE refers to any terminal that uses the <a href="https://gitlab.gnome.org/GNOME/vte">vte</a> library as a shortcut, this does almost 99.99% of the heavy lifting for you so behaviour across different vte terminals tends to be the same, for example, gnome-terminal, xfce-terminal, <a href="https://github.com/endaaman/tym">tym</a> all leverage the vte library.<br/>
-</li>
-</ul><br/><a href="https://github.com/zenixls2/alacritty">Fork for ligatures in alacritty</a> - Even the alacritty author recommends you simply use another terminal if you want ligatures.  <br/>
-It is possible to enable bitmap fonts in kitty, using the <code>kitty-bitmap</code> AUR package, <a href="https://github.com/slavfox/Cozette#kitty">More instructions</a> - The author does not and will never support bitmap fonts  - <i>I havent got this to work personally but ymmv</i><br/>
-<br/>
-Issue page for sixel support in VTE: <<a href="https://gitlab.gnome.org/GNOME/vte/-/issues/253>">https://gitlab.gnome.org/GNOME/vte/-/issues/253></a>  <br/>
-<br/>
-<a href="https://wiki.archlinux.org/title/List_of_applications#Terminal">Arch Wiki Page</a>  <br/>
-<br/>
-<br/>
-<header>
+<li><em>Fallback</em> refers to the ability to fallback fonts, that is find a character in the next font in a list if it is not in the first one.</li>
+<li><em>Advanced</em> refers to the capability of advanced open type features, primarily stylistic sets</li>
+<li>The foot terminal is wayland exclusive</li>
+<li>If you’re thinking about using st, I highly suggest you use <a href="https://github.com/bakkeby/st-flexipatch">st-flexipatch</a> right from the start, It will save you a lot of time</li>
+<li>VTE refers to any terminal that uses the <a href="https://gitlab.gnome.org/GNOME/vte">vte</a> library as a shortcut, this does almost 99.99% of the heavy lifting for you so behaviour across different vte terminals tends to be the same, for example, gnome-terminal, xfce-terminal, <a href="https://github.com/endaaman/tym">tym</a> all leverage the vte library.</li>
+</ul>
+<p><a href="https://github.com/zenixls2/alacritty">Fork for ligatures in alacritty</a> - Even the alacritty author recommends you simply use another terminal if you want ligatures.<br />
+It is possible to enable bitmap fonts in kitty, using the <code>kitty-bitmap</code> AUR package, <a href="https://github.com/slavfox/Cozette#kitty">More instructions</a> - The author does not and will never support bitmap fonts  - <em>I havent got this to work personally but ymmv</em></p>
+<p>Issue page for sixel support in VTE: <a href="https://gitlab.gnome.org/GNOME/vte/-/issues/253">https://gitlab.gnome.org/GNOME/vte/-/issues/253</a></p>
+<p><a href="https://wiki.archlinux.org/title/List_of_applications#Terminal">Arch Wiki Page</a></p>
 <h1>Images in the terminal</h1>
-</header>
-<br/>
-This is an often sought after feature and often used with fetch scripts.  <br/>
-Right now there is no standard and each terminal does their own thing, more and more are supporting <a href="https://en.wikipedia.org/wiki/Sixel">Sixel</a>, though, so maybe that will end up being the standard.  <br/>
-For terminals without image support entirely, there are hacks using <code>w3m-img</code> and <code>uberzerg</code> to get them&#x2026;but they're finicky and don't just work™, so I'd recommend against them.  <br/>
-<a href="https://github.com/dylanaraps/neofetch/wiki/Images-in-the-terminal">Full article</a>  <br/>
-<br/>
-XTerm (compiled with &#x2013;enable-sixel-graphics option) does support sixel,  <br/>
-You should launch xterm with “-ti vt340” option. The SIXEL palette is limited to a maximum of 16 colors. To avoid this limitation, Try  <br/>
-<br/>
-<b>Overview:</b>  <br/>
-Alacritty doesn't support images and needs a hack;  <br/>
-Wezterm natively supports iterms2's image format & sixel;  <br/>
-Kitty has its own format;  <br/>
-Foot supports sixel;  <br/>
-Xterm supports sixel;  <br/>
-St can support sixel via a <a href="https://gitlab.com/exorcist365/dotfulls/-/blob/master/.local/share/src/st/patches/0001-add-st-sixel.patch">patch</a>  <br/>
-<br/>
-<br/>
-<header>
+<p>This is an often sought after feature and often used with fetch scripts.<br />
+Right now there is no standard and each terminal does their own thing, more and more are supporting <a href="https://en.wikipedia.org/wiki/Sixel">Sixel</a>, though, so maybe that will end up being the standard.<br />
+For terminals without image support entirely, there are hacks using <code>w3m-img</code> and <code>uberzerg</code> to get them…but they’re finicky and don’t just work™, so I’d recommend against them.<br />
+<a href="https://github.com/dylanaraps/neofetch/wiki/Images-in-the-terminal">Full article</a></p>
+<p>XTerm (compiled with –enable-sixel-graphics option) does support sixel,<br />
+You should launch xterm with “-ti vt340” option. The SIXEL palette is limited to a maximum of 16 colors. To avoid this limitation, Try</p>
+<p><strong>Overview:</strong><br />
+Alacritty doesn’t support images and needs a hack;<br />
+Wezterm natively supports iterms2’s image format &amp; sixel;<br />
+Kitty has its own format;<br />
+Foot supports sixel;<br />
+Xterm supports sixel;<br />
+St can support sixel via a <a href="https://gitlab.com/exorcist365/dotfulls/-/blob/master/.local/share/src/st/patches/0001-add-st-sixel.patch">patch</a></p>
 <h1>Prompts</h1>
-</header>
-<br/>
-A shell is usually configured with a <i>prompt</i>. This is a small indicator to tell you the computer is waiting for user input, Its usually printed on every new line after the end of a command in a shell  <br/>
-Eg:  <br/>
-<br/>
-    $ uname -r<br/>
-    5.10.11-11-amd64<br/>
-    $ neofetch<br/>
-<br/>
-In this example, <code>$</code> is the prompt character.  <br/>
-You can make it very fancy and make it display some useful information if you so like.  <br/>
-<br/>
-<a href="https://www.gnu.org/software/bash/manual/html_node/Controlling-the-Prompt.html">Default Format Specifiers</a> (for Bash)  <br/>
-of note:  <br/>
-<code>\[</code> and <code>\]</code> are used to denote characters that must not be printed (color escape codes for example), make sure to use them or the prompt calculation will be wrong.  <br/>
-<br/>
-If you'd rather just not bother doing it yourself, You can use <a href="https://starship.rs/">Starship</a> to get a pre-made one, rtfm manual for how to modify it.  <br/>
-<br/>
-Example prompt (this is gentoo's default one):  <br/>
-<code>PS1='\[\033[01;31m\]\h\[\033[01;34m\] \W \$\[\033[00m\] '</code>  <br/>
-<br/>
-<br/>
-<h2 id="terminal-color-codes-decorations">Terminal Color Codes & Decorations</h2>
-<p>
-<br/>
-Terminals generally support a couple or more of 3 color modes, they are:  <br/>
-<br/>
+<p>A shell is usually configured with a <em>prompt</em>. This is a small indicator to tell you the computer is waiting for user input, Its usually printed on every new line after the end of a command in a shell<br />
+Eg:</p>
+<pre><code>$ uname -r
+5.10.11-11-amd64
+$ neofetch
+</code></pre>
+<p>In this example, <code>$</code> is the prompt character.<br />
+You can make it very fancy and make it display some useful information if you so like.</p>
+<p><a href="https://www.gnu.org/software/bash/manual/html_node/Controlling-the-Prompt.html">Default Format Specifiers</a> (for Bash)<br />
+of note:<br />
+<code>\[</code> and <code>\]</code> are used to denote characters that must not be printed (color escape codes for example), make sure to use them or the prompt calculation will be wrong.</p>
+<p>If you’d rather just not bother doing it yourself, You can use <a href="https://starship.rs/">Starship</a> to get a pre-made one, rtfm manual for how to modify it.</p>
+<p>Example prompt (this is gentoo’s default one):<br />
+<code>PS1='\[\033[01;31m\]\h\[\033[01;34m\] \W \$\[\033[00m\] '</code></p>
+<h2>Terminal Color Codes &amp; Decorations</h2>
+<p>Terminals generally support a couple or more of 3 color modes, they are:</p>
 <ul>
-<li>  24 Bit Colour True Color (Full RGB Color)<br/>
-</li>
-<li>  256 Color<br/>
-</li>
-<li>  8 Color (Everything supports this one)<br/>
-</li>
-</ul><br/><b>The reset code is <code>\033[0m</code></b> (This removes any formatting)  <br/>
-\*This is how you change text formatting in the terminal by putting these codes in between the text you want to be formatted.  <br/>
-<br/>
-To change foreground color:  <br/>
-<code>\033[3&lt;N&gt;m</code>  <br/>
-<br/>
-To change background color:  <br/>
-<code>\033[4&lt;N&gt;m</code>  <br/>
-<br/>
-To change foreground color to bright:  <br/>
-<code>\033[3&lt;N&gt;;1m</code>  <br/>
-<br/>
-To change background color to bright:  <br/>
-<code>\033[4&lt;N&gt;;1m</code>  <br/>
-<br/>
-Where &lt;N&gt; is one of the following:  <br/>
-<br/>
+<li>24 Bit Colour True Color (Full RGB Color)</li>
+<li>256 Color</li>
+<li>8 Color (Everything supports this one)</li>
+</ul>
+<p><strong>The reset code is <code>\033[0m</code></strong> (This removes any formatting)<br />
+*This is how you change text formatting in the terminal by putting these codes in between the text you want to be formatted.</p>
+<p>To change foreground color:<br />
+<code>\033[3&lt;N&gt;m</code></p>
+<p>To change background color:<br />
+<code>\033[4&lt;N&gt;m</code></p>
+<p>To change foreground color to bright:<br />
+<code>\033[3&lt;N&gt;;1m</code></p>
+<p>To change background color to bright:<br />
+<code>\033[4&lt;N&gt;;1m</code></p>
+<p>Where &lt;N&gt; is one of the following:</p>
 <table>
 <colgroup>
 <col  class="org-left">
@@ -276,23 +233,20 @@ Where &lt;N&gt; is one of the following:  <br/>
 </tr>
 </tbody>
 </table>
-<br/>
-</p>
-<h3 id="decorations">Decorations</h3>
-<p>
-<br/>
+<h3>Decorations</h3>
 <ul>
-<li>  Bold <code>\033[1m</code><br/>
-</li>
-<li>  Italic <code>\033[3m</code><br/>
-</li>
-<li>  Underline <code>\033[4m</code><br/>
-</li>
-<li>  Reversed <code>\033[7m</code><br/>
+<li>Bold <code>\033[1m</code></li>
+<li>Italic <code>\033[3m</code></li>
+<li>Underline <code>\033[4m</code></li>
+<li>Reversed <code>\033[7m</code></li>
+</ul>
 			<footer>
 				<a href="../index.html">Return To Index</a>
 			</footer>
 	  </article>
-      <script src="/assets/ipage.js" defer></script>
+	  <script type="module">
+		import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+		mermaid.initialize({ startOnLoad: true });
+	  </script>
 	</body>
 </html>

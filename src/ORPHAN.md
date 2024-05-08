@@ -1,12 +1,12 @@
 <!-- DUMPING GROUND FOR STUFF FROM HERE AND THERE -->
 <!-- TODO: Remove, This should taken care of via git -->
-#f Most common parts of a rice
+<details><summary>Most common parts of a rice
 
-<img class="pxl-art" alt="illustration" src="embed/ricing-guide.webp" />
+<img class="pxl-art" alt="illustration" src="../embed/ricing-guide.webp" />
 
-#END f
+</details>
 
-#f Window Manager Tier list
+<details><summary>Window Manager Tier list</summary>
 This is very biased, of course :)
 and based on my opinion.
 **I HIGHLY RECOMMEND YOU TRY EACH OF THEM AND DECIDE FOR YOURSELF**

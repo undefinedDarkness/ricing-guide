@@ -8,7 +8,7 @@ Ill recommend Ubuntu, Debian or Fedora to start with.
 <!-- See these [graphs](/out/ricing/graphs/index.html) I made -->
 
 #### Choosing a window manager / desktop environment
->>>
+<blockquote>
 there are many tools you can use to achieve what you want, i don't think it's really possible to list everything but i can give you some insights:
 
 1) window managers like fvwm: (https://www.fvwm.org/) and awesome (https://awesomewm.org/) have their own widgeting system which you could use to build custom user interfaces most other desktops can't offer, they enable you to make your own themes completely from the ground up as they don't rely on the popular gtk or qt toolkits
@@ -25,4 +25,5 @@ if you're not aware what 1) and 1.1) do, exactly, i recommend reading about them
 reminding you that you're not, at all, tied to the software i have mentioned here
 you have a world of other options you can pick from and do your own thing, it's just that there are so many options and ways that it's hard to summarize everything and i often need to oversimplify stuff
 
->>>ame
+ame
+</blockquote>

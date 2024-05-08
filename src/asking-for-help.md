@@ -1,6 +1,7 @@
 # How to RTFM & Get help
 
-==TLDR: Read documentation before asking questions and if you don't find / can't think of an answer, put effort into asking questions and ask questions in places where they are most likely to answered.==
+> [!NOTE]
+> TLDR: Read documentation before asking questions and if you don't find / can't think of an answer, put effort into asking questions and ask questions in places where they are most likely to answered.
 
 Read manuals whenever you can, those can be easily accessed for any installed software by doing `man <NAME-OF-SOFTWARE>`, or by searching through a online [repository](https://manpages.debian.org/).
 If manpages are too long for you, You can also try using [tldr-pages](https://github.com/tldr-pages/tldr) to get the very basics of an application with some examples
@@ -22,9 +23,12 @@ There is a good reason there are not that many good rices, it's a difficult thin
 If you can't do that, maybe ricing isn't for you. No harm just using a desktop environment.
 
 #### Getting help
-==Found a nice article on the topic, read it!:  http://www.catb.org/esr/faqs/smart-questions.html .==
 
-==SO has a guide on how to ask questions that applies to a lot of other places, https://stackoverflow.com/help/how-to-ask==
+> [!IMPORTANT]
+> Found a nice article on the topic, read it!:  http://www.catb.org/esr/faqs/smart-questions.html .==
+
+> [!IMPORTANT]
+> SO has a guide on how to ask questions that applies to a lot of other places, https://stackoverflow.com/help/how-to-ask==
 
 Ask for help in a community related to that one piece of software you want help for. Usually there is at least a GitHub discussion, an IRC chat room or a Matrix space / discord server for most things.
 Make good use of them, you'll meet developers of the software and actual users of the software there. Instead of asking in something like the UP server which is only mildly related to that software.

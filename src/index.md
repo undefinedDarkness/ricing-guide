@@ -1,6 +1,6 @@
 # 🍱 Index
 
-```mermaid
+<pre class="mermaid">
 graph TD
     A[Start]
     A --> B[Theory]
@@ -17,7 +17,7 @@ graph TD
     click G "./out/how-to-rice-thing.html"
     click H "./out/terminal.html"
     click I "./out/where-to-start.html"
-```
+</pre>
 
 ## Credits
 Most of the following are members of the r/unixporn discord server.
@@ -28,3 +28,8 @@ Uniform Look for GTK & QT Apps, QGtkStyle - Gingka#1796
 Document has been edited by asdadsdafdfdssfd#7660
 
 I have quoted some people here and there and credited them appropriately
+
+<script type="module">
+	import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+	mermaid.initialize({ startOnLoad: true });
+</script>

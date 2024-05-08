@@ -1,14 +1,16 @@
 # How do I rice THING?
 
-#f Emacs
+<details>
+<summary><b>Emacs</b></summary>
 The youtube channel [System Crafters](https://www.youtube.com/c/systemcrafters) has already created a significant amount of resources regarding getting starting with emacs, 
 You can find them [here](https://wiki.systemcrafters.cc/emacs/) - See the Emacs From Scratch series for an indepth series of writinig your own configuraton,
 But as usual, Do not follow them word for word, Experiment your own and try to understand what each and every setting does :D
 
 Customizing emacs is 90% about your own passion, There is a lot you can do
-#END f
+</details>
 
-#f Chromium
+<details>
+<summary>Chromium</summary>
 Most chromium based browers do not support anything more than marginal theming,
 It is possible to affect a few changes by your gtk theme [[example](https://github.com/phocus/gtk/blob/master/scss/gtk-3.0/applications/_chromium.scss)]
 
@@ -17,9 +19,10 @@ You can also make your own Chromium theme tho again, these are quite limited in 
 Vivaldi however allows injecting CSS into the browser UI, I found a few links on it but your mileage may vary
 https://www.reddit.com/r/vivaldibrowser/comments/gso6bx/questions_about_css_customisations/
 https://forum.vivaldi.net/topic/10629/vivaldi-ui-customisations
-#END f
+</details>
 
-#f Firefox
+<details>
+<summary>Firefox</summary>
 You can customize the User Interface (Chrome) with Firefox CSS, see the following:
 - [Getting started guide](https://www.reddit.com/r/FirefoxCSS/wiki/index/tutorials)
 - [How to create & live debug userChrome.css](https://www.reddit.com/r/FirefoxCSS/comments/73dvty/tutorial_how_to_create_and_livedebug_userchromecss/)
@@ -46,9 +49,10 @@ Firefox has quite a few limitations on setting local files as your start page (n
 
 Then use [this extension](https://addons.mozilla.org/en-US/firefox/addon/new-tab-override/) to set the URL.
 Chromium users can use [this](https://chrome.google.com/webstore/detail/custom-new-tab-url/mmjbdbjnoablegbkcklggeknkfcjkjia) instead (Chrome places no limitations).
-#END f
+</details>
 
-#f GTK
+<details>
+<summary>GTK & Qt</summary>
 This is most easily accomplished by forking an existing theme and modifying them. Most themes are open source and
 are easily modifiable (if you know CSS). Phocus is a nice one to start with since its code is clean scss and well structured, (https://github.com/phocus/gtk)
 *NOTE: Phocus is not a GTK2 theme so it will not show up in `lxappearance`, Set your gtk theme using [settings.ini](https://wiki.archlinux.org/title/GTK#Basic_theme_configuration) instead,
@@ -90,7 +94,7 @@ To enable it on other systems, after installing the qgnomeplatform package, set 
 QT_QPA_PLATFORMTHEME=gnome
 ```
 
-#END f
+</details>
 
 <!--
 #f Neovim / Vim
@@ -122,17 +126,17 @@ to use them more easily, create a keybinding for `SynStack()` or `require('hl-in
 #END f
 -->
 
-#f Terminal
+<b>Terminal</b>\
 Moved section to [terminal](terminal.html)
-#END f
 
-#f Picom
+<details><summary>Picom</summary>
 *The definition of compositor changes from X11 to Wayland, I am talking about X11 only:*
 Compositor is a thing that sits between your window manager and X11 and makes stuff like transparency work. Recently, however, compositors have been used to implement blur, rounded corners and animations for a window manager to behave more like a desktop enviroment.
 
 If the version in your package repositories has the features you want, I'd suggest you use that instead.
 
-===This is out of date, Picom master now includes many of these features, It is recommended to reference it's documentation===
+> [!WARNING]
+> This is out of date, Picom master now includes many of these features, It is recommended to reference it's documentation
 
 #### I just want transparency and or shadow
 You're in luck, lots of choice for you. You can use `picom` / `xcompmgr` / `compton`, anything you want and generally it'll just work™
@@ -185,18 +189,18 @@ transition-pow-h = 0.1
 size-transition = true
 ```
 
-Example configuration with most of the available options: https://github.com/yshui/picom/blob/next/picom.sample.conf
-To get a window class for a exclude / include, use `xwininfo` or `xprop` & click the window you want.
-Remember to use window classes whenever you can, window titles can be very finicky.
+Example configuration with most of the available options: https://github.com/yshui/picom/blob/next/picom.sample.conf \
+To get a window class for a exclude / include, use `xwininfo` or `xprop` & click the window you want. \
+Remember to use window classes whenever you can, window titles can be very finicky. \
 The 2nd part of the window class is the relevant bit, for example: 
 For `Application.Navigator`, You would put `class_g = 'Navigator'` in your picom config
 
 [Nuxsh's Page About Picom Forks](https://nuxsh.is-a.dev/blog/picom.html)
 [Arch Wiki Page](https://wiki.archlinux.org/title/Picom)
 
-#END f
+</details>
 
-#f Wallpapers
+<details><summary>Wallpapers</summary>
 
 Good places to look for wallpapers are:
 - https://images.google.com/
@@ -222,9 +226,9 @@ A few personal repositories of wallpapers (usually high quality and categorized)
 - Frenzy's: https://github.com/FrenzyExists/wallpapers
 
 You could try the distro wallpaper competitions / repositories too, for example:
-here's Ubuntu's competition for 21.10: https://discourse.ubuntu.com/t/wallpaper-competition-for-impish-indri-ubuntu-21-10/22852/8
-Xubuntu's competition for 16.04: https://xubuntu.org/news/xubuntu-16-04-wallpaper-competition-winners/
-PopOS's repository: https://github.com/pop-os/wallpapers/tree/master/original
+- Ubuntu's competition for 21.10: https://discourse.ubuntu.com/t/wallpaper-competition-for-impish-indri-ubuntu-21-10/22852/8
+- Xubuntu's competition for 16.04: https://xubuntu.org/news/xubuntu-16-04-wallpaper-competition-winners/
+- PopOS's repository: https://github.com/pop-os/wallpapers/tree/master/original
 
 I like [the /wg/ board too](https://boards.4chan.org/wg/) but that one is definatley very **NSFW**
 [Their catalog of threads](https://boards.4chan.org/wg/catalog)
@@ -251,6 +255,6 @@ Their usage is fairly simple:
 `feh --bg-tile |path-to-wallpaper|` or if you have a bitmap you can use `xsetroot -bitmap |path-to-bitmap-wallpaper|`, or manually tile it in your image editor of choice.
 
 You can find a bunch of sources here: https://notes.neeasade.net/tiled-wallpaper-sources.html, Their site has a bunch of cool ricing related stuff too.
-#END f
+</details>
 
 ### 
