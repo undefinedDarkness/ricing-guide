@@ -62,4 +62,3 @@ My personal preference nowadays is fvwm because is flexible enough for the thing
 >>> Caelie
 
 #END f
-

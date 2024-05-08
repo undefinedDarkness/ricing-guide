@@ -15,7 +15,7 @@
 
 .pxl,
 .pxl-art {
-    image-rendering: crisp-edges;
+    image-rendering: pixelated;
 }
 
 /* Position something in the margin of content */

@@ -108,12 +108,12 @@ sudo rm -rf 70-no-bitmaps.conf && sudo ln -s ../conf.avail/70-yes-bitmaps.conf .
 Commonly used bitmap fonts:
 <div class='showcase horizontal'>
 
-[![Cozette](../embed/font-previews/CozetteVector.png)](https://github.com/slavfox/Cozette)
+[![Cozette](./embed/font-previews/CozetteVector.png)](https://github.com/slavfox/Cozette)
 <!-- [![Gohu-GohuFont](../embed/font-previews/GohuFont-Medium.png)](https://font.gohu.org/) -->
-[![Terminus](../embed/font-previews/Terminus.png)](https://terminus-font.sourceforge.net)	
-[![Unifont](../embed/font-previews/Unifont-Nerd-Font-Complete.png)](https://unifoundry.com/unifont/)
-[![Cherry](../embed/font-previews/cherry-11.png)](https://github.com/turquoise-hexagon/cherry)
-[![Scientifica](../embed/font-previews/sci0.png)](https://github.com/nerdypepper/scientifica)
+[![Terminus](./embed/font-previews/Terminus.png)](https://terminus-font.sourceforge.net)	
+[![Unifont](./embed/font-previews/Unifont-Nerd-Font-Complete.png)](https://unifoundry.com/unifont/)
+[![Cherry](./embed/font-previews/cherry-11.png)](https://github.com/turquoise-hexagon/cherry)
+[![Scientifica](./embed/font-previews/sci0.png)](https://github.com/nerdypepper/scientifica)
 </div>
 
 [Repository Of Bitmap Fonts](https://github.com/Tecate/bitmap-fonts)
