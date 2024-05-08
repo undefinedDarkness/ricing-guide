@@ -1,8 +1,5 @@
-
-
 # Comparison of terminals
 
-#verbatim
 <table>
 <colgroup>
 <col  class="org-left">
@@ -117,7 +114,7 @@
 </tr>
 </tbody>
 </table>
-#END verbatim
+
 **Notes:**   
 
 -   *Fallback* refers to the ability to fallback fonts, that is find a character in the next font in a list if it is not in the first one.
