@@ -5,8 +5,13 @@ from watchfiles import awatch
 import asyncio
 import subprocess
 import platform
+import sys
 
 prefix="\033[41m  🔥  \033[0m  " 
+
+async def ainput(string: str) -> str:
+    await asyncio.to_thread(sys.stdout.write, f'{string} ')
+    return await asyncio.to_thread(sys.stdin.readline)
 
 # A terribly simple little hot server
 
@@ -114,12 +119,19 @@ async def watch():
         for change in changes:
             fp = Path(change[1])
             print(prefix + f" Rebuilding {fp.stem} ({str(fp)})")
-            process = subprocess.run([ bash_path, "./generate", fp.relative_to(script_dir) ], stdout=subprocess.PIPE)
-            print(process.stdout.decode('utf8').strip())
+            subprocess.run([ bash_path, "./generate", fp.relative_to(script_dir) ])
+            # print(process.stdout.decode('utf8').strip())
             # print(process.stderr)
             applicable = [conn for conn in sockets if conn[0] == fp.stem] 
             for socket in applicable:
                 await socket[1].send_str("UPDATE")
+
+async def handleUserInput():
+    while True:
+        userInput = (await ainput("> ")).upper()
+        if userInput != "EXIT":
+            subprocess.run([ bash_path, "./generate" ])
+            # print(output.stdout.decode('utf8').strip())
 
 async def main():
 
@@ -129,11 +141,13 @@ async def main():
     site = web.TCPSite(runner, "localhost", 5000)
     await site.start()
     print(prefix + "Server Started @ \u001b[31mlocalhost:5000\u001b[0m")
+    print(prefix + "Press CTRL+C to stop the server, Return to force a full build")
 
     # Initialize File Watcher
-    await watch()
-
-    await asyncio.Event().wait()
+    watcher_task = asyncio.create_task(watch())
+    user_input_task = asyncio.create_task(handleUserInput())
+    
+    await asyncio.gather(watcher_task)
 
 try:
     asyncio.run(main())
