@@ -1,0 +1,27 @@
+{
+    "cSpell.language": "en-GB",
+    "cSpell.enableFiletypes": [
+        "!c",
+        "!cpp",
+        "!csharp",
+        "!css",
+        "!elixir",
+        "!go",
+        "!graphql",
+        "!handlebars",
+        "!haskell",
+        "!jade",
+        "!java",
+        "!javascript",
+        "!javascriptreact",
+        "!json",
+        "!jsonc",
+        "!python",
+        "!rust",
+        "!scala",
+        "!scss",
+        "!swift",
+        "!typescript",
+        "!vue"
+    ]
+}
