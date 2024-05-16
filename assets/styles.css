@@ -229,12 +229,7 @@ footer {
     align-items: center;
 }
 
-footer>a[href="/out/index.html"] {
-    text-decoration: none;
-}
-
-footer>a[href="/out/index.html"]::before {
-    content: "✈";
+footer > * {
     padding-right: 10px;
 }
 

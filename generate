@@ -74,6 +74,11 @@ format_doc_heading () {
 	doc_heading=${doc_heading/'!TABLEOFCONTENT!'/"$toc"}
 }
 
+format_doc_footer () {
+	doc_path=${1#'./'}
+	doc_footer=${template_post_content/'!SRCPATH!'/"$doc_path"}
+}
+
 # Tasks:
 build_md () {
 	out=${1/src/"$output_dir"}
@@ -85,8 +90,9 @@ build_md () {
 		markup=$(quiet=true bash ./.tooling/pond.sh "$1")
 	fi
 	format_doc_heading "$out" "$1"
+	format_doc_footer "$1"
 	mkdir -p "$(dirname "$out")"
-	printf '%s\n%s\n%s' "$doc_heading" "$markup" "$template_post_content" > "$out"
+	printf '%s\n%s\n%s' "$doc_heading" "$markup" "$doc_footer" > "$out"
 	fin "$1"
 }
 
