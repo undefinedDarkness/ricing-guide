@@ -1,4 +1,7 @@
-# Ricing Guide
+# 🍚 Ricing Guide
+
+This guide is hosted on [Github Pages](https://nes.is-a.dev/ricing-guide)
+
 This is my own ricing guide based on my time ricing and what I see people asking for and such in the r/unixporn discord server 
 
 ## Contributing
@@ -12,5 +15,5 @@ Links from `./src/index.md` must be prefixed with `./out/` since `index.html` is
 Other links should be preferably relative instead of absolution (start with `./` or `../` instead of `/`)
 
 # TODO
-- [ ] Phase out custom markdown syntax so that can be viewed from GH
+- [X] Phase out custom markdown syntax so that can be viewed from GH
 
