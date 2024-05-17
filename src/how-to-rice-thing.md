@@ -203,37 +203,41 @@ For `Application.Navigator`, You would put `class_g = 'Navigator'` in your picom
 <details><summary>Wallpapers</summary>
 
 Good places to look for wallpapers are:
-- https://images.google.com/
+- [https://images.google.com/](https://images.google.com/)
 Includes a search by colour and resolution, so you can find a wallpaper matching your screen size.
-- https://subtlepatterns.com/
+- [https://subtlepatterns.com/](https://subtlepatterns.com/)
 Tiling wallpapers that are provided as backgrounds for websites.
-- https://unsplash.com/
+- [https://unsplash.com/](https://unsplash.com/)
 A source of free quality high res photos, all released under creative commons licensing so are free to use.
-- https://wallhaven.cc/
+- [https://wallhaven.cc/](https://wallhaven.cc/)
 A clone of wallbase after that was shut down, has searches by colour, resolution.
-- https://web.archive.org/web/20130708152642/http://squidfingers.com/patterns
+- [https://web.archive.org/web/20130708152642/http://squidfingers.com/patterns](https://web.archive.org/web/20130708152642/http://squidfingers.com/patterns)
 158 tiling wallpapers. [archive link because normal page is dead]
-- http://simpledesktops.com/
+- [http://simpledesktops.com/](http://simpledesktops.com/)
 Wonderful sets of minimal wallpapers.
 
-Source: https://www.reddit.com/r/unixporn/wiki/ricing#wiki_wallpapers
+Source: [https://www.reddit.com/r/unixporn/wiki/ricing#wiki_wallpapers](https://www.reddit.com/r/unixporn/wiki/ricing#wiki_wallpapers)
 
 A few personal repositories of wallpapers (usually high quality and categorized):
-- Oblivousofcrap's: https://app.box.com/s/tsq119oyh0o0wagqx4a4nx74hyggvvxc 
-- BlueJive's: https://github.com/Blu3Jive001/Wallpapers
-- Exo's: https://gitlab.com/exorcist365/wallpapers (This one is good if you use gruvbox)
-- Kraken's: https://mega.nz/folder/PpohCIpT#tII4Q60AFpgfnEYFywwlow (the biggest by far)
-- Frenzy's: https://github.com/FrenzyExists/wallpapers
+- [Oblivousofcrap's](https://app.box.com/s/tsq119oyh0o0wagqx4a4nx74hyggvvxc )
+- [BlueJive's](https://github.com/Blu3Jive001/Wallpapers)
+- [Exo's](https://gitlab.com/exorcist365/wallpapers) (This one is good if you use gruvbox)
+- [Kraken's](https://mega.nz/folder/PpohCIpT#tII4Q60AFpgfnEYFywwlow) (the biggest by far)
+- [Frenzy's](https://github.com/FrenzyExists/wallpapers)
 
 You could try the distro wallpaper competitions / repositories too, for example:
-- Ubuntu's competition for 21.10: https://discourse.ubuntu.com/t/wallpaper-competition-for-impish-indri-ubuntu-21-10/22852/8
-- Xubuntu's competition for 16.04: https://xubuntu.org/news/xubuntu-16-04-wallpaper-competition-winners/
-- PopOS's repository: https://github.com/pop-os/wallpapers/tree/master/original
+- [Ubuntu's competition for 21.10](https://discourse.ubuntu.com/t/wallpaper-competition-for-impish-indri-ubuntu-21-10/22852/8)
+- [Xubuntu's competition for 16.04](https://xubuntu.org/news/xubuntu-16-04-wallpaper-competition-winners/)
+- [PopOS's repository](https://github.com/pop-os/wallpapers/tree/master/original)
 
-I like [the /wg/ board too](https://boards.4chan.org/wg/) but that one is definatley very **NSFW**
+I like [the /wg/ board too](https://boards.4chan.org/wg/) but that one is definitely very **NSFW**, See
 [Their catalog of threads](https://boards.4chan.org/wg/catalog)
 
-Really depends on what you're doing and looking for tho..
+You can also try using a image board (booru) site or crawler like:
+- [Safebooru](https://safebooru.org/)
+- [nik.bot.nu](http://nik.bot.nu/)
+
+Really depends on what you're doing and looking for though..
 
 #### Animated Wallpapers
 For those who don't know how to set animated walls, here's a command for it (you will need xwinwrap and mpv for video files or gifview for gif files):
@@ -244,8 +248,8 @@ If the above doesn't work correctly, use this one:
 `xwinwrap -ov -g 1920x1080+0+0 -- mpv -wid WID ~/path/to/video.flv --no-osc --no-osd-bar --loop-file --player-operation-mode=cplayer --no-audio --panscan=1.0 --no-input-default-bindings`
 
 Sources for pixelart animated wallpapers
-https://1041uuu.tumblr.com/
-https://waneella.tumblr.com/
+- [https://1041uuu.tumblr.com/](https://1041uuu.tumblr.com/)
+- [https://waneella.tumblr.com/](https://waneella.tumblr.com/)
 
 Googling will also get you a bit of resources .
 
@@ -254,7 +258,5 @@ These are wallpapers that tiled like tiles in a pattern, [example](/assets/image
 Their usage is fairly simple:
 `feh --bg-tile |path-to-wallpaper|` or if you have a bitmap you can use `xsetroot -bitmap |path-to-bitmap-wallpaper|`, or manually tile it in your image editor of choice.
 
-You can find a bunch of sources here: https://notes.neeasade.net/tiled-wallpaper-sources.html, Their site has a bunch of cool ricing related stuff too.
-</details>
+You can find a bunch of sources here: [https://notes.neeasade.net/tiled-wallpaper-sources.html](https://notes.neeasade.net/tiled-wallpaper-sources.html), Their site has a bunch of cool ricing related stuff too.
 
-### 
