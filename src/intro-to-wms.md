@@ -68,6 +68,8 @@ There are many tiling window managers but I'd recommend i3 to start with.
 
 Consult this if you'd like more choice: https://wiki.archlinux.org/title/Comparison_of_tiling_window_managers
 
+For an example of the kinds of layouts possible with a tiling window manager, see the [FrakenWM manual page](https://raw.githubusercontent.com/sulami/frankenwm/master/frankenwm.1)
+
 ## Usage
 All WM's are designed especially to be used entirely from the keyboard. They can also use mouse controls but this mostly applies to floating window managers.
 
