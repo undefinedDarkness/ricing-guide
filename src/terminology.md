@@ -1,25 +1,3 @@
-<style>
-	.cbox-example {
-		display: inline-block;
-		background: lightcoral;
-		color: black;
-	}
-
-	.cbox-example *, .cbox-example {
-		padding: 1em 1.5em 1.5em 1.5em;
-		border: 1px solid;
-	}
-
-	.cbox-example > * {
-		background: skyblue;
-		border: 5px solid black;
-	}
-
-	.cbox-example > * > * {
-		background: #fafafa;
-	}
-</style>
-
 # Ricing Terminology
 *Some definitons copied word for word from the [Unixporn dictionary](https://www.reddit.com/r/unixporn/wiki/themeing/dictionary/)*
 
@@ -46,20 +24,4 @@ This refers to the bar usually above a window's content, that has its title and 
 A display manager or DM, is the utility which handles the login screen, usually graphical. Both the [Arch] and [Gentoo] wiki pages have great resources and links to the different display managers. Common display managers are LightDM, G(nome)DM, and SLiM.
 
 ## Padding / Margin
-This can mean a lot of things in different contexts but usually it refers to something like this
-
-<div class="cbox-example">
-	MARGIN
-	<div>
-		PADDING
-		<div>
-			CONTENT BOX
-		</div>
-	</div>
-</div>
-
-*Padding* is the extra space between the borders and the content box of the widget.
-
-*Margin* is the space between the border of one box and the border of the another, or the space between 2 entire boxes.
-
-The padding the margin and the content all together make up an entire element.
+See [Design](./design)

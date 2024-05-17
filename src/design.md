@@ -1,19 +1,3 @@
-<style>
-	.content-box-demo {
-		padding: 1em;
-		background-color: #fdffdf;
-		color: #000;
-	}
-	.content-box-demo > * {
-		padding: 1em;
-		border: 5px solid #737373;s
-		background-color:#e3dcff;
-	}
-	.content-box-demo > * > * {
-		padding: 1em;
-		background-color:#cff0fb;
-	}
-</style>
 # 🎨 Design
 Stuff related to the general design of a rice
 
@@ -141,12 +125,4 @@ Margin is spacing between the box and its siblings / parent box.
 
 [Better explanation](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
 
-<div class="content-box-demo">
-MARGIN
-<div>
-PADDING
-<div style="background-color: white; padding: 1em;">
-CONTENT
-</div>
-</div>
-</div>
+![css box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model/box-model.png)

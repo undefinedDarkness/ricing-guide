@@ -195,7 +195,7 @@ Remember to use window classes whenever you can, window titles can be very finic
 The 2nd part of the window class is the relevant bit, for example: 
 For `Application.Navigator`, You would put `class_g = 'Navigator'` in your picom config
 
-[Nuxsh's Page About Picom Forks](https://nuxsh.is-a.dev/blog/picom.html)
+[Nuxsh's Page About Picom Forks](https://nuxsh.is-a.dev/blog/picom.html) \
 [Arch Wiki Page](https://wiki.archlinux.org/title/Picom)
 
 </details>
