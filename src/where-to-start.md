@@ -2,7 +2,10 @@
 
 There is a lot of choice when you start ricing and there are so many things you can dive into that it can easily become overwhelming, So this is a kind of road map I wrote of what things you should do in what order to really understand if you like ricing. 
 
-**DISCLAIMER**:  There are many different ways to go about ricing, After all ricing is about creative expression and even more about making your desktop comfortable for yourself. There are a million different things you can change and add to make it more personal.
+> [!NOTE]
+> Nam has written a similar article, touching the same topics, You can find it [on his website](https://nam.is-a.dev/blog/ricing/)
+
+> **DISCLAIMER**:  There are many different ways to go about ricing, After all ricing is about creative expression and even more about making your desktop comfortable for yourself. There are a million different things you can change and add to make it more personal.
 
 Let's begin:
 
