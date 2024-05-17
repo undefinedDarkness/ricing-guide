@@ -1,11 +1,34 @@
 # How do I rice THING?
 
+> [!WARNING]
+> Document is a work-in-progress there is a chance things will be out of date or wrong, if you find something, Please contribute an edit for it!
+
+<details>
+	<summary>i3</summary>
+
+~~i3 by itself is pretty barebones out of the box so maybe consider using i3-gaps~~, As of may 2024 i3 gaps has been merged with i3 proper,
+i3 has a really well written manual which I urge you to read the [i3 manual](https://i3wm.org/docs/userguide.html) which thoroughly documents average usage with the window manager
+
+Though for ricing purposes you might be interested in using polybar, eww or some similar bar / widget system along with an app launcher like dmenu or rofi
+ 
+</details>
+
+<details>
+<summary><b>awesomewm</b></summary>
+	
+You can ofcourse consult the [official documentation](https://awesomewm.org/apidoc/) which provide thorough documentation of the API but are lacking in a tutorial sense, Stardust-Kyun has also published his own [tutorial series on ricing awesomewm](https://star.is-a.dev/projects/awmguide/).
+
+If you face issues while ricing, do consider joining the [awesomewm discord server](https://discord.gg/BPat4F87dg) as you'll have a better chance of getting the support you need
+ 
+</details>
+
 <details>
 <summary><b>Emacs</b></summary>
 The youtube channel [System Crafters](https://www.youtube.com/c/systemcrafters) has already created a significant amount of resources regarding getting starting with emacs, 
-You can find them [here](https://wiki.systemcrafters.cc/emacs/) - See the Emacs From Scratch series for an indepth series of writinig your own configuraton,
+You can find them [here](https://wiki.systemcrafters.cc/emacs/) - See the Emacs From Scratch series for an indepth series of writing your own configuraton,
 But as usual, Do not follow them word for word, Experiment your own and try to understand what each and every setting does :D
 
+You can also refer to the [GNU Manual](https://www.gnu.org/software/emacs/manual/html_node/emacs/index.html) documenting almost every part of vanilla Emacs, a valuable resource
 Customizing emacs is 90% about your own passion, There is a lot you can do
 </details>
 
