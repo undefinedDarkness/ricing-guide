@@ -1,4 +1,6 @@
-# 🍱 Index
+# 🍱 Ricing Guide
+Welcome to my little ricing guide, To get started try clicking on any of the following links, All the best and have fun :D
+I recommend reading `Where To Start` & the `FAQ`
 
 ```mermaid
 graph TD
@@ -10,7 +12,7 @@ graph TD
     C --> F[FAQ]
     C --> G[How to rice thing]
     C --> H[Terminal]
-    C --> I[An example ricing journey]
+    C --> I[Where to start]
     click D "./out/design.html"
     click E "./out/useful.html"
     click F "./out/faq.html"
