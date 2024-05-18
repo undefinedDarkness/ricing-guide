@@ -37,15 +37,16 @@ Customizing emacs is 90% about your own passion, There is a lot you can do
 Most chromium based browers do not support anything more than marginal theming,
 It is possible to affect a few changes by your gtk theme [[example](https://github.com/phocus/gtk/blob/master/scss/gtk-3.0/applications/_chromium.scss)]
 
-You can also make your own Chromium theme tho again, these are quite limited in scope: https://developer.chrome.com/docs/extensions/mv3/themes/
+You can also make your own Chromium theme tho again, these are quite limited in scope: [https://developer.chrome.com/docs/extensions/mv3/themes/](https://developer.chrome.com/docs/extensions/mv3/themes/)
 
 Vivaldi however allows injecting CSS into the browser UI, I found a few links on it but your mileage may vary
-https://www.reddit.com/r/vivaldibrowser/comments/gso6bx/questions_about_css_customisations/
-https://forum.vivaldi.net/topic/10629/vivaldi-ui-customisations
+- [https://www.reddit.com/r/vivaldibrowser/comments/gso6bx/questions_about_css_customisations/](https://www.reddit.com/r/vivaldibrowser/comments/gso6bx/questions_about_css_customisations/)
+- [https://forum.vivaldi.net/topic/10629/vivaldi-ui-customisations](https://forum.vivaldi.net/topic/10629/vivaldi-ui-customisations)
 </details>
 
 <details>
 <summary>Firefox</summary>
+
 You can customize the User Interface (Chrome) with Firefox CSS, see the following:
 - [Getting started guide](https://www.reddit.com/r/FirefoxCSS/wiki/index/tutorials)
 - [How to create & live debug userChrome.css](https://www.reddit.com/r/FirefoxCSS/comments/73dvty/tutorial_how_to_create_and_livedebug_userchromecss/)
@@ -76,6 +77,7 @@ Chromium users can use [this](https://chrome.google.com/webstore/detail/custom-n
 
 <details>
 <summary>GTK & Qt</summary>
+
 This is most easily accomplished by forking an existing theme and modifying them. Most themes are open source and
 are easily modifiable (if you know CSS). Phocus is a nice one to start with since its code is clean scss and well structured, (https://github.com/phocus/gtk)
 *NOTE: Phocus is not a GTK2 theme so it will not show up in `lxappearance`, Set your gtk theme using [settings.ini](https://wiki.archlinux.org/title/GTK#Basic_theme_configuration) instead,

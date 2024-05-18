@@ -51,10 +51,10 @@ These 16 are split into 2 groups, "regulars" and "brights", If you have only 8 c
 It's also important that your colour scheme work well for syntax highlighting (& be semantic) and be suitable for using in GUI environments.
 
 For an example, Here are some ones I really like:
-- https://github.com/savq/melange
-- https://github.com/sainnhe/gruvbox-material
-- https://github.com/rose-pine/rose-pine-theme
-- https://gitlab.com/snakedye/chocolate
+- [Melange](https://github.com/savq/melange)
+- [Gruvbox Material](https://github.com/sainnhe/gruvbox-material)
+- [Rose-Pine Theme](https://github.com/rose-pine/rose-pine-theme)
+- [Chocolate](https://gitlab.com/snakedye/chocolate)
 
 ### Wallpaper
 
