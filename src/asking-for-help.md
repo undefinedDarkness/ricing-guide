@@ -16,19 +16,19 @@ Dig deep into the dotfiles of other rices, if you have no idea how they did a th
 I put this here because I see questions like "How do I rice?" or "Is there a tutorial for it?" way more often than I'd like.
 
 Barely any linux software is documented in such a through manner to have documentation like that.
-Most of the software isn't trying to hold your hand. Most of it is to fill a need for the developer himself and which he has kindly shared with the community.
-Whether you like it or not to rice effectively, you will need to learn the ins and outs of any apps you use and generally you'll need some programming knowledge too. Just being good at programming isn't all you need, You need to have a good eye and have some knowledge of user interface design or just know *what looks good*.
-There is a good reason there are not that many good rices, it's a difficult thing to do.
+Most of the software isn't trying to hold your hand. Most of it is to fill a need for the developer himself and which he has kindly shared with the community. Of course this isn't a situation that I like but it's just difficult and annoying to document things at times but by and large most applications have a community willing to help you out with any problems that might arise
 
-If you can't do that, maybe ricing isn't for you. No harm just using a desktop environment.
+But I'd suggest you don't come into ricing expecting everything to hold your hand, It's about exploration and about expressing oneself and those things I don't think can be taught 😅
+
+Some knowledge of UI / UX design certainly doesn't hurt 
 
 #### Getting help
 
 > [!IMPORTANT]
-> Found a nice article on the topic, read it!:  http://www.catb.org/esr/faqs/smart-questions.html .==
+> Found a nice article on the topic, read it!:  http://www.catb.org/esr/faqs/smart-questions.html 
 
 > [!IMPORTANT]
-> SO has a guide on how to ask questions that applies to a lot of other places, https://stackoverflow.com/help/how-to-ask==
+> SO has a guide on how to ask questions that applies to a lot of other places, https://stackoverflow.com/help/how-to-ask
 
 Ask for help in a community related to that one piece of software you want help for. Usually there is at least a GitHub discussion, an IRC chat room or a Matrix space / discord server for most things.
 Make good use of them, you'll meet developers of the software and actual users of the software there. Instead of asking in something like the UP server which is only mildly related to that software.
@@ -46,3 +46,5 @@ It's either that no one knows the solution to your problem or no one cares enoug
 Write out your question in overwhelming detail - mention everything you have already tried and what you have found related to your problem.
 Upload your configuration files somewhere (like [0x0.st](https://0x0.st) or [paste.rs](https://paste.rs)) and link them in your question, share screenshots of what your problem is.
 Try explaining it in simple language.
+
+And ofcourse it's difficult to get decent help if your setup is very complicated (eg: running into an issue while using musl libc) so that's more of a made your own bed so sleep in it situation...
