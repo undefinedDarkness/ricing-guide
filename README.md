@@ -9,12 +9,12 @@ graph TD
     A[Start]
     A --> B[Theory]
     A --> C[Practice]
-    B --> D[<a href="https://github.com/undefinedDarkness/ricing-guide/master/src/design.md">Design</a>]
-    B --> E[<a href="https://github.com/undefinedDarkness/ricing-guide/master/src/useful.md">Useful</a>]
-    C --> F[<a href="https://github.com/undefinedDarkness/ricing-guide/master/src/faq.md">FAQ</a>]
-    C --> G[<a href="https://github.com/undefinedDarkness/ricing-guide/master/src/how-to-rice-thing.md">How to rice thing</a>]
-    C --> H[<a href="https://github.com/undefinedDarkness/ricing-guide/master/src/terminal.md">Terminal</a>]
-    C --> I[<a href="https://github.com/undefinedDarkness/ricing-guide/master/src/where-to-start.md">Where to start</a>]
+    B --> D[Design]
+    B --> E[Useful]
+    C --> F[FAQ]
+    C --> G[How to rice thing]
+    C --> H[Terminal]
+    C --> I[Where to start]
 ```
 
 ## Contributing
