@@ -81,6 +81,32 @@ Bitmaps will not scale outside their designed font size;
 They will generally look a lot sharper than vector fonts because they are generally rendered without [AA](https://www.youtube.com/watch?v=hqi0114mwtY);
 All of which leads to pretty unique pixilated look that a lot of people like.
 
+Unfortunatley, Bitmaps have fallen out of fashion since vector fonts tend to be a lot better suited for most UI purposes but it's still possible to achieve the bitmap look though you need to configure font config, [Arch Wiki Entry](https://wiki.archlinux.org/title/Font_configuration#Fontconfig_configuration)
+
+Example configuration, replace `Ark Pixel Font` with whatever font you're using
+```xml
+<?xml version="1.0"?>
+<!DOCTYPE fontconfig SYSTEM "urn:fontconfig:fonts.dtd">
+<fontconfig>
+    <match target="font"> 
+        <test name="family" qual="any">
+            <string>Ark Pixel Font 16</string>
+        </test>
+        <edit name="hinting" mode="assign">
+            <bool>false</bool>
+        </edit>
+        <edit name="antialias" mode="assign">
+            <bool>false</bool>
+        </edit>
+        <edit name="lcdfilter" mode="assign">
+            <const>lcddefault</const>
+        </edit> 
+    </match>
+</fontconfig>
+```
+
+A way to convert BDF & PCF files to OTB (OpenType Bitmap), a format that has better support is [Documented here](https://gist.github.com/Earnestly/6bc5bad7666f7bf8816d054b7b76112e), You can also try using [Bits'nPicas](https://github.com/kreativekorp/bitsnpicas) to convert the font or even to make your own, it's just pixels on a grid after all 😉
+
 ##### Using in GUI Applications
 Pango (a text library used in most GUI applications on Linux) does not directly support bitmap fonts, but it is still possible to get them to work,
 Bitmap fonts can be converted to a truetype (supported by pango) trojan horse which contains the bitmap data, using tools like, fontforge or [fonttosfnt](https://gitlab.freedesktop.org/xorg/app/fonttosfnt),
